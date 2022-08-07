@@ -1,0 +1,249 @@
+%-------------------------
+% Resume in Latex
+% Author : Dhruv Doshi
+% Website: https://github.com/DhruvDoshi
+% License : MIT
+
+
+% PROGRAMMING SKILLS 
+% TRY 1 & TRY 4 are good.
+
+
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+% \newcommand{\customTemp}[2]{\item{#1}{#2}\vspace{-4pt}}
+
+
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://doshidhruv.com/}{\Large Dhruv Doshi}} & Email : \href{mailto:Dhruv@dal.ca}{Dhruv@dal.ca}\\
+  \href{https://doshidhruv.com/}{https://www.doshidhruv.com} & Mobile : +1-902-989-1274 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {\href{https://www.dal.ca/}{Dalhousie University}}{Halifax, CA}
+      {Master of Applied Computer Science;  GPA: 3.9}{Jan. 2021 -- Aug. 2022}
+    \resumeSubheading
+      {\href{https://www.gtu.ac.in/}{Gujarat Technological University}}{Ahmedabad, India}
+      {Bachelor of Engineering in Computer Engineering;  GPA: 3.92 (9.34/10.0)}{Aug. 2016 -- Aug. 2020}
+  \resumeSubHeadingListEnd
+
+
+% % % TRY 1
+% % --------PROGRAMMING SKILLS------------
+% \section{Programming Skills}
+%       \resumeItemListStart[leftmargin=*, noitemsep]
+%         \resumeItem{Languages}
+%           {Python, Java, JavaScript, GO, Solidity}
+%         \resumeItem{Blockchain}
+%           {Hyperledger Fabric, ERC-20, Remix, MetaMask, Ganache, Truffle.js}
+%         \resumeItem{Artificial Intelligence}
+%           {TensorFlow, TFLearn, Keras, PyTorch, Scikit Learn}
+%         \resumeItem{Cloud Technologies}
+%           {AWS, GCP, Azure, Docker, Kubernetes, Heroku, CI/CD Pipelines}
+%         \resumeItem{Frameworks}
+%           {React.js, Vue.js, Django, Flask, Spring}
+%         \resumeItem{Tools \& DB}
+%           {GIT, JIRA, Postman, MongoDB, MySQL, DynamoDB}
+%       \resumeItemListEnd
+ 
+
+
+
+
+% % % TRY 2
+% %--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+    \begin{description}[noitemsep,topsep=0pt,leftmargin=*]
+    \item[] \indent{\textbf{Languages: }Python, Java, JavaScript, GO, Solidity}
+    \item[] {\textbf{Blockchain: }Hyperledger Fabric, ERC-20, Remix, MetaMask, Ganache, Truffle.js}
+    \item[] {\textbf{Artificial Intelligence: }TensorFlow, TFLearn, Keras, PyTorch, Scikit Learn}
+    \item[] {\textbf{Cloud Technologies: }AWS, GCP, Azure, Docker, Kubernetes, Heroku, CI/CD Pipelines}
+    \item[] {\textbf{Frameworks: }React.js, Vue.js, Django, Flask, Spring}
+    \item[] {\textbf{Tools \& DB: }GIT, JIRA, Postman, MongoDB, MySQL, DynamoDB}
+    \end{description}
+
+
+
+% % % TRY 3
+% %-----------PROJECTS-----------------https://www.overleaf.com/project/62ddb7c0c842e09e63dd91e5
+% \section{Programming Skills}
+%   \resumeSubHeadingListStart
+%     \resumeSubItem{Languages}
+%           {C, Python, Java, JavaScript, GO, Solidity}
+%     \resumeSubItem{Blockchain}
+%           {Hyperledger Fabric, ERC-20, Remix, MetaMask, Ganache, Truffle.js}
+%     \resumeSubItem{Artificial Intelligence}
+%           {TensorFlow, TFLearn, Keras, PyTorch, Scikit Learn}
+%     \resumeSubItem{Cloud Technologies}
+%           {AWS, GCP, Azure, Docker, Kubernetes, Heroku, CI/CD Pipelines}
+%     \resumeSubItem{Frameworks}
+%           {React.js, Vue.js, Django, Flask, Spring}
+%     \resumeSubItem{Tools \& DB}
+%           {GIT, JIRA, Postman, MongoDB, MySQL, DynamoDB}
+%   \resumeSubHeadingListEnd
+
+% % % TRY 4
+%  %-----------PROGRAMMING SKILLS-----------------
+% \section{Programming Skills}
+%  \resumeSubHeadingListStart
+%   \resumeItemListStart{
+%      \textbf{Languages}{: C, Python, Java, JavaScript, GO, Solidity}
+%      \break
+%      \textbf{Blockchain}{: Hyperledger Fabric, ERC-20, Remix, MetaMask, Ganache, Truffle.js}
+%      \break
+%      \textbf{Artificial Intelligence}{: TensorFlow, TFLearn, Keras, PyTorch, Scikit Learn}
+%      \break
+%      \textbf{Cloud Technologies}{: AWS, GCP, Azure, Docker, Kubernetes, Heroku, CI/CD Pipelines}
+%      \break
+%      \textbf{Frameworks}{: React.js, Vue.js, Django, Flask, Spring}
+%      \break
+%      \textbf{Tools \& DB}{: GIT, JIRA, Postman, MongoDB, MySQL, DynamoDB}
+%   }
+%   \resumeItemListEnd
+%  \resumeSubHeadingListEnd
+
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Canada Revenue Agency}{Ottawa, Canada}
+      {Software Developer Intern}{May 2022 - Present}
+      \resumeItemListStart
+        \resumeItem{Secure Portal Re-engineering}
+          {Migrating CRA website from Struts version to Angular version for upgrading. Worked with multiple backend API and data flows. }
+        \resumeItem{Accessibility Issues}
+          {Solving accessibility bugs for specially-abled users. Worked on the Quartz library which is used for the development of every component within the application}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {HealthCard}{Halifax, Canada}
+      {Blockchain Architect}{March 2022 - Present}
+      \resumeItemListStart
+        \resumeItem{Verification Engine}
+          {Developing documents verification system with Hyperledger Fabric and Solidity contracts. All the manual document verification would be handled by a blockchain engine working on AI Algorithms}
+        \resumeItem{Reward Functions}
+          {Reconstructing reward function to cater with Ethereum tokens over the main network. Developed a specific equation that would accordingly dictate the amount of tokens allocated to every user}
+        \resumeItem{Containerized Application}
+          {Shifting the monolithic architecture to Kubernetes containerized application transforming it to micros-service architecture.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Dalhousie University}{Halifax, Canada}
+      {Research \& Teaching Assistant}{Sept. 2021 - Aug. 2022}
+      \resumeItemListStart
+        \resumeItem{Advance Topics in Cloud Computing}
+          {Delivered lab for grad students and guided and evaluated the projects}
+        \resumeItem{Introduction to Data Science}
+          {Delivered lab for class of 80. Solved doubts and designed tests}
+        \resumeItem{Software Development}
+          {Headed the class of 75. Designed tests and solved students queries}
+        \resumeItem{Research}
+          {Worked on Algorithm and code for tracing table generation of given code. The project's objective is to help new students in computer science to visualize the flow of the code. Developed using Python and HTML}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {CryptoVantage}{Netherlands}
+      {Blockchain Developer}{July 2020 - Dec. 2020}
+      \resumeItemListStart
+        \resumeItem{Monitoring System}
+          {Develop an Illicit transaction detection system on cryptocurrencies single-handedly. Used JavaScript, Python and GO language. Tested the product for vulnerability and potential threats. Leveraged considerable amount of transnational data for optimum solution}
+        \resumeItem{Technologies}
+          {Python, Go, Solidity, Node.js, MongoDB, AWS, GitHub, Remix, AWS, Unix}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{\href{https://github.com/DhruvDoshi/DCS-BBN}{DCS-BBN}}
+      {Developed enterprise cloud storage solution based on Blockchain with six raid data backups with distributed systems, backed up by cryptocurrency DCScoin. Published research paper named, \href{https://link.springer.com/chapter/10.1007/978-3-030-49795-8_54}{\textbf{Blockchain-Based Decentralized Cloud Storage}} in \href{https://link.springer.com/book/10.1007/978-3-030-49795-8}{\textit{International Conference on Mobile Computing and Sustainable Informatics}} by \href{https://www.springer.com/gp}{\textbf{Springer}} }
+    \resumeSubItem{\href{https://github.com/DhruvDoshi/Flight_Price_Agent_Machine_Learning}{Flight Agent}}
+      {Using CNN, SVM, Q-Learning, DQN, and DDQN with Python Libraries developed agent which suggest user either to wait for the better future price or buy the ticket right away.}
+    \resumeSubItem{\href{https://github.com/DhruvDoshi/Ticket_Booking_System}{Cloud Booking}}
+      {Using AWS \& GCP service developed user configurable cloud booking application. }
+  \resumeSubHeadingListEnd
+
+
+
+
+%-------------------------------------------
+\end{document}
