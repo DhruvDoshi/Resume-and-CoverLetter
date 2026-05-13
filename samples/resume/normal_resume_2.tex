@@ -1,0 +1,150 @@
+%-------------------------
+% Resume in Latex - Tailored for Synthetic (Staff/Principal SWE)
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://doshidhruv.com/}{\Large Dhruv Doshi}} & Email : \href{mailto:Work@doshidhruv.com}{Work@doshidhruv.com}\\
+  \href{https://doshidhruv.com/}{https://www.doshidhruv.com} & Mobile : +1-902-989-1274 \\
+\end{tabular*}
+
+%-----------SUMMARY-----------------
+\section{Summary}
+\small{Staff-level full stack engineer and architect with 7+ years building production systems across AI, financial data, and cloud platforms. Strong track record shipping quickly in ambiguity, owning end-to-end features, and designing reliable data/workflow foundations for intelligent automation. Hands-on with TypeScript/Python stacks, LLM-enabled products, and high-scale integration pipelines.}
+
+%-----------SKILLS-----------------
+\section{Technical Skills}
+\begin{description}[noitemsep, topsep=0pt, leftmargin=*]
+    \item[] \textbf{Languages:} TypeScript, Python, Go, SQL, JavaScript
+    \item[] \textbf{Product Engineering:} Next.js, React, REST APIs, service integration, rapid prototyping
+    \item[] \textbf{AI and Agents:} LLM workflows, RAG, LangChain, prompt engineering, vector DBs (Pinecone, Chroma)
+    \item[] \textbf{Data Systems:} ETL/ELT, Airflow, Snowflake, event-driven architecture, streaming and batch pipelines
+    \item[] \textbf{Cloud and Infra:} AWS, GCP, Kubernetes, Terraform, CI/CD, observability and alerting
+    \item[] \textbf{Domain Exposure:} Financial platforms, quantitative modeling, workflow automation, compliance-aware systems
+\end{description}
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+  {Royal Bank of Canada (RBC)}{Toronto, Canada}
+  {Senior Full Stack Engineer - Enterprise Architect}{Nov 2022 -- Present}
+  \resumeItemListStart
+    \resumeItem{AI Product Delivery in Ambiguous Domains}
+      {Lead development of an AI platform that converts natural-language requirements into architecture blueprints and implementation artifacts, enabling faster decision-making and execution.}
+    \resumeItem{High-Volume Financial Data Pipelines}
+      {Designed and operated ETL/ELT systems in Python with Airflow and Snowflake, processing 100TB+ of daily data with production-grade reliability and observability.}
+    \resumeItem{Workflow Automation and Integrations}
+      {Built and scaled workflow pipelines on AWS/GCP with Kubernetes and telemetry-driven monitoring, reducing manual operations and improving response time to incidents.}
+    \resumeItem{Fast Execution and Ownership}
+      {Partnered directly with cross-functional stakeholders to scope, build, and ship features quickly while balancing speed, quality, and operating cost.}
+  \resumeItemListEnd
+
+\resumeSubheading
+  {HealthCard (Blockchain Startup)}{Halifax, Canada}
+  {Blockchain Architect / Data Engineer}{Mar 2022 -- Nov 2022}
+  \resumeItemListStart
+    \resumeItem{Startup Build Velocity}
+      {Contributed across backend services, data ingestion, and deployment automation in a small team environment with fast product iteration cycles.}
+    \resumeItem{Financial and Trust-Critical Workflows}
+      {Developed event-driven pipelines and verification services integrating secure data flows, near real-time processing, and cloud-native deployment.}
+  \resumeItemListEnd
+
+\resumeSubheading
+  {Dalhousie University}{Halifax, Canada}
+  {Research \& Teaching Assistant}{Sept 2021 -- Aug 2022}
+  \resumeItemListStart
+    \resumeItem{Applied Systems and Tooling}
+      {Built Python-based automation and visualization tools to improve system understanding and operational learning for graduate-level cloud and software coursework.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Selected Projects}
+\resumeSubHeadingListStart
+    \resumeSubItem{Flight Price Optimization Agent}
+      {Built a reinforcement learning system (DQN/DDQN) to support quantitative purchase recommendations; designed data pipelines and model-driven decision workflows.}
+
+    \resumeSubItem{Automatic Trading Algorithm}
+      {Engineered a low-latency trading algorithm integrated with brokerage APIs for real-time signal processing and automated execution decisions.}
+
+    \resumeSubItem{DCS-BBN: Decentralized Storage with Data Analysis}
+     {Designed decentralized storage architecture (Blockchain/AWS S3) and performed statistical reliability analysis; published research in Springer. \href{https://link.springer.com/chapter/10.1007/978-3-030-49795-8_54}{[Publication Link]}}
+
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+\resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Toronto, School of Continuing Studies}{Toronto, Canada}
+      {Certificate in Enterprise Architecture (Completed)}{May 2023 -- Apr 2025}
+    \resumeSubheading
+      {Dalhousie University}{Halifax, Canada}
+      {Master of Applied Computer Science; GPA: 3.7/4.0}{Jan 2021 -- Aug 2022}
+    \resumeSubheading
+      {Gujarat Technological University}{Ahmedabad, India}
+      {Bachelor of Engineering in Computer Engineering; GPA: 3.92/4.0}{Aug 2016 -- Aug 2020}
+\resumeSubHeadingListEnd
+
+\end{document}

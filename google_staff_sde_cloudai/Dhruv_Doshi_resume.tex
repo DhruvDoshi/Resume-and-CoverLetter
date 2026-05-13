@@ -1,0 +1,104 @@
+\documentclass[letterpaper,9.5pt]{article}
+\usepackage{latexsym}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage[top=0.25in, bottom=0.25in, left=0.5in, right=0.5in]{geometry}
+\usepackage{fancyhdr}
+\pagestyle{fancy}\fancyhf{}\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\urlstyle{same}\raggedbottom\raggedright
+\setlength{\tabcolsep}{0in}
+\titleformat{\section}{\vspace{-7pt}\scshape\raggedright\large}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+\newcommand{\resumeItem}[2]{\item\small{\textbf{#1}{: #2 \vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{\vspace{-2pt}\item\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}\textbf{#1} & #2 \\\textit{\small#3} & \textit{\small #4} \\\end{tabular*}\vspace{-6pt}}
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\renewcommand{\labelitemii}{$\circ$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-6pt}}
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Dhruv Doshi} & \href{mailto:work@doshidhruv.com}{work@doshidhruv.com}\\
+  \href{https://www.doshidhruv.com}{doshidhruv.com} & +1-902-989-1274 $|$ Toronto, Canada\\
+\end{tabular*}
+
+%-----------SKILLS-----------------
+\section{Skills}
+\begin{itemize}[leftmargin=*,itemsep=-2pt]
+  \small{
+    \item \textbf{Languages \& Full Stack:} Python, TypeScript, Go, JavaScript, SQL $|$ Node.js, React, REST APIs, GraphQL, HTML/CSS
+    \item \textbf{AI / GenAI:} LLMs, RAG, LangChain, Agentic Workflows, Conversational AI, Gemini API, OpenAI API, Embeddings, Vector DBs, Prompt Engineering
+    \item \textbf{Distributed Systems \& Cloud:} Kafka, GCP (Vertex AI, BigQuery, Cloud Storage), AWS (EKS, Lambda, S3, SageMaker, Kinesis), Kubernetes, Terraform, Docker, CI/CD
+    \item \textbf{Data \& Observability:} OpenTelemetry, ELK Stack, Distributed Tracing, Prometheus, SLOs, Elasticsearch, Airflow, Snowflake
+    \item \textbf{Architecture:} Software Design \& Architecture, Microservices, Event-driven Architecture, IAM, Zero-Trust, Responsible AI, AI Governance
+  }
+\end{itemize}
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Royal Bank of Canada (RBC)}{Toronto, Canada}
+    {Staff Software Developer \& Enterprise Architect}{Nov 2022 -- Present}
+  \resumeItemListStart
+    \resumeItem{Conversational AI Agent -- ASB Assist (In Development)}{Building a full-stack conversational AI agent that allows users to describe requirements in natural language and auto-generates compliant architecture outputs, injects security patterns (Zero-Trust, MCP gateway, agent gateways), and provisions enterprise service recommendations via an LLM + RAG pipeline; hands-on with Gemini API integration, prompt engineering, model evaluation, LangChain orchestration, and multi-step agentic reasoning across chat surfaces.}
+    \resumeItem{Enterprise Platform -- 0-to-1 Full Stack Delivery}{Designed and led end-to-end delivery of an enterprise-wide solution blueprint platform (Node.js/TypeScript + React) serving 1,000+ engineers and architects; wrote 99.6\% of production code and 100\% of core logic; defined technical architecture, drove API design and backend services, and owned the full CI/CD pipeline from development through production deployment in air-gapped, security-constrained environments.}
+    \resumeItem{High-Throughput Distributed Systems}{Architected institution-wide log repatriation platform (Vector + Fluent Bit + Kafka + Logstash) ingesting 150 TB/day across 10,000+ systems; defined RBC's OpenTelemetry schema for logs and metrics enabling vendor-agnostic routing (Dynatrace, Datadog, Splunk) as a config change; eliminated all point-to-point third-party integrations institution-wide.}
+    \resumeItem{Technical Roadmap \& Cross-functional Leadership}{Led 5 engineers across weekly sprint cadence; defined and delivered multi-quarter technical roadmap in close collaboration with product management, risk, and enterprise architecture stakeholders; drove OTel adoption as institutional standard across 20+ engineering teams, cutting per-team onboarding from weeks to days.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {HealthCard (Acquired Startup)}{Remote}
+    {Blockchain Architect \& First Full Stack Engineer}{Aug 2021 -- Jul 2022}
+  \resumeItemListStart
+    \resumeItem{0-to-1 Full Stack Launch}{Joined as the first engineer; designed, built, and launched the entire product -- React/TypeScript frontend, Node.js/Express REST API, blockchain verification layer (Hyperledger Fabric + Solidity), and HIPAA-compliant AWS EKS deployment with full audit logging; team scaled to 20+ engineers before acquisition.}
+    \resumeItem{ML Inference \& Model Deployment}{Integrated transformer-based document classification models end-to-end -- model deployment on AWS EKS, inference API design, production monitoring; reduced manual review overhead by 60\% and enabled real-time credential verification at scale.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {CryptoVantage}{Netherlands (Remote)}
+    {Blockchain Developer}{Jul 2020 -- Dec 2020}
+  \resumeItemListStart
+    \resumeItem{Real-time Analytics Platform}{Built a real-time on-chain transaction monitoring system in Go/JavaScript integrating Ethereum event streaming, wallet clustering, and risk-scoring APIs; designed for low-latency, high-throughput ingestion with downstream compliance consumers.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {Freelance Software Development}{Remote}
+    {Independent Contractor -- Full Stack \& Architecture}{Jan 2017 -- Jun 2020}
+  \resumeItemListStart
+    \resumeItem{Full Stack Architecture \& Delivery}{Designed and delivered full-stack systems and REST APIs for 10+ clients across fintech and DeFi -- frontend (React/JS), backend (Node.js, Go), smart contract layers (Solidity), and cloud deployment (AWS) -- from requirements through production launch.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+\resumeSubHeadingListStart
+  \resumeSubItem{Automatic Trading Algorithm}{Sub-second latency algorithmic trading system integrating live brokerage APIs, real-time market data streams, and quantitative signals (momentum, mean-reversion) with automated risk management and position sizing -- end-to-end designed, built, and deployed.}
+  \resumeSubItem{DCS-BBN (Decentralised Cloud Storage)}{Distributed peer-to-peer storage network using Solidity smart contracts, Hyperledger Fabric ledger, and zk-SNARK proofs for privacy-preserving verification. \textbf{Published -- Springer ICMR International Conference on Mobile Computing.}}
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Dalhousie University}{Halifax, Canada}
+    {MASc Computer Science, GPA: 3.9/4.0 $|$ TA: Algorithms, Advanced Cloud Computing}{Jan 2021 -- Aug 2022}
+  \resumeSubheading
+    {University of Toronto}{Toronto, Canada}
+    {Enterprise Architecture Certification (3-semester program)}{Completed 2024}
+  \resumeSubheading
+    {Gujarat Technological University}{India}
+    {BE Computer Engineering, GPA: 3.92/4.0}{Aug 2016 -- Aug 2020}
+\resumeSubHeadingListEnd
+
+\end{document}

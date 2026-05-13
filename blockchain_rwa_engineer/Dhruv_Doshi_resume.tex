@@ -1,0 +1,102 @@
+\documentclass[letterpaper,9.5pt]{article}
+\usepackage{latexsym}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage[top=0.25in, bottom=0.25in, left=0.5in, right=0.5in]{geometry}
+\usepackage{fancyhdr}
+\pagestyle{fancy}\fancyhf{}\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\urlstyle{same}\raggedbottom\raggedright
+\setlength{\tabcolsep}{0in}
+\titleformat{\section}{\vspace{-7pt}\scshape\raggedright\large}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+\newcommand{\resumeItem}[2]{\item\small{\textbf{#1}{: #2 \vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{\vspace{-2pt}\item\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}\textbf{#1} & #2 \\\textit{\small#3} & \textit{\small #4} \\\end{tabular*}\vspace{-6pt}}
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\renewcommand{\labelitemii}{$\circ$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-6pt}}
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Dhruv Doshi} & \href{mailto:work@doshidhruv.com}{work@doshidhruv.com}\\
+  \href{https://www.doshidhruv.com}{doshidhruv.com} & +1-902-989-1274 $|$ Toronto, Canada\\
+\end{tabular*}
+
+%-----------SKILLS-----------------
+\section{Skills}
+\begin{itemize}[leftmargin=*,itemsep=-2pt]
+  \small{
+    \item \textbf{Blockchain \& Web3:} Ethereum, Polygon, Base, Solidity, ERC-20, ERC-1400, ERC-3525, Hardhat, Foundry, ethers.js, wagmi, The Graph, Hyperledger Fabric, zk-SNARKs, Cross-chain Bridges, Fireblocks, Anchorage, BitGo, AML/KYC, 5AMLD
+    \item \textbf{Payment \& Finance:} SWIFT MT/MX, ACH, ISO 20022, Stablecoin Architecture, Permissioned Token Frameworks, Travel Rule Compliance, On-chain Compliance (Chainalysis/Elliptic patterns)
+    \item \textbf{Languages \& Frontend:} TypeScript, JavaScript, Python, Go, SQL $|$ React, Node.js, REST APIs, GraphQL
+    \item \textbf{Cloud \& Infra:} AWS (EKS, Lambda, S3, RDS, Kinesis), Kubernetes, Helm, Terraform, Docker, CI/CD, OpenShift (OCP4.x)
+    \item \textbf{Architecture \& Compliance:} Enterprise Architecture (TOGAF), IAM, Zero-Trust, GDPR/HIPAA, OSFI, Responsible AI, AI Governance
+  }
+\end{itemize}
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Royal Bank of Canada (RBC / RBCX Digital)}{Toronto, Canada}
+    {Staff Software Developer \& Enterprise Architect}{Nov 2022 -- Present}
+  \resumeItemListStart
+    \resumeItem{RBCX Digital -- Blockchain Architecture}{Led enterprise blockchain architecture for RBCX Digital initiatives -- designed on-chain settlement frameworks, token issuance governance models, and custodian integration patterns for digital asset products; defined blockchain standards across cross-functional teams in collaboration with compliance, legal, and capital markets stakeholders.}
+    \resumeItem{Payment Rail Integration (SWIFT / ACH / ISO 20022)}{Designed and integrated SWIFT MT/MX messaging pipelines and ACH payment rail connectors into RBC's enterprise platform; built ISO 20022-compatible message transformation services bridging traditional payment networks with emerging blockchain settlement networks and digital asset infrastructure.}
+    \resumeItem{Regulated Platform Delivery}{Led 5 engineers delivering a patent-pending enterprise platform in air-gapped, security-constrained environments; governed solution certifications within RBC's Elite Enterprise Architecture group enforcing OSFI, GDPR, IAM, and Zero-Trust standards at institution scale.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {HealthCard (Acquired Startup)}{Remote}
+    {Blockchain Architect \& First Full Stack Engineer}{Aug 2021 -- Jul 2022}
+  \resumeItemListStart
+    \resumeItem{ERC-20 Token Infrastructure \& Smart Contracts}{Designed and deployed full token lifecycle on Ethereum mainnet -- ERC-20 issuance, staking reward contracts, and proprietary trust-score algorithm on Hyperledger Fabric enabling real-time premium verification and fraud-resistant claims processing; implemented gas-optimised Solidity patterns across all contracts.}
+    \resumeItem{Permissioned KYC/AML Verification Layer}{Built HIPAA-compliant identity verification system with on-chain address whitelisting, KYC attestation, and full audit logging; all token transfers gated by verified identity state -- directly mirroring ERC-1400 permissioned transfer restriction model for regulated token issuance.}
+    \resumeItem{Hardhat/Foundry CI/CD \& Contract Tooling}{Migrated contract toolchain to Hardhat and Foundry with full test coverage, gas-optimisation reports, and automated mainnet deployment scripts; reduced deployment cycle from days to under 30 minutes; implemented formal invariant testing suite.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {CryptoVantage}{Netherlands (Remote)}
+    {Blockchain Developer}{Jul 2020 -- Dec 2020}
+  \resumeItemListStart
+    \resumeItem{On-chain AML Compliance Engine}{Built real-time illicit transaction detection system in Go/JavaScript integrating Ethereum event streaming, ML-based wallet clustering, and risk-scoring APIs for 5AMLD (EU Anti-Money Laundering Directive) compliance; functionally equivalent to Chainalysis/Elliptic integration patterns for flagging high-risk on-chain activity for government and financial compliance teams.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {Freelance Blockchain Development}{Remote}
+    {Independent Smart Contract Engineer}{Jan 2017 -- Jun 2020}
+  \resumeItemListStart
+    \resumeItem{Multi-chain Token Engineering}{Delivered ERC-20, ERC-1400 security token, and ERC-3525 semi-fungible token contracts for RWA tokenization across Ethereum, Polygon, and Stellar-compatible networks; implemented stablecoin vaulting logic, permissioned transfer restrictions, and cross-chain bridge integrations using Hardhat, Foundry, ethers.js, wagmi, and The Graph for 10+ clients.}
+    \resumeItem{Custody \& Compliance Integration}{Integrated custodian wallet APIs (Fireblocks and Anchorage-compatible MPC interfaces) and BitGo multi-sig infrastructure; implemented on-chain AML/KYC whitelisting, travel rule compliance, and permissioned token frameworks for regulated token issuance across capital markets and DeFi clients.}
+    \resumeItem{Payment Rail \& Settlement Bridges}{Built blockchain-to-TradFi settlement connectors linking on-chain token transfers with ACH and ISO 20022-compatible off-chain rails; designed cross-chain interoperability flows and DeFi protocol integrations for fintech clients operating in regulated financial environments.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+\resumeSubHeadingListStart
+  \resumeSubItem{DCS-BBN (Decentralised Cloud Storage)}{Peer-to-peer archival storage network -- Solidity smart contracts, Hyperledger Fabric ledger, and zk-SNARK proofs for privacy-preserving file verification. \textbf{Published -- Springer ICMR International Conference on Mobile Computing.}}
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Dalhousie University}{Halifax, Canada}
+    {MASc Computer Science, GPA: 3.9/4.0}{Jan 2021 -- Aug 2022}
+  \resumeSubheading
+    {Gujarat Technological University}{India}
+    {BE Computer Engineering, GPA: 3.92/4.0}{Aug 2016 -- Aug 2020}
+\resumeSubHeadingListEnd
+
+\end{document}

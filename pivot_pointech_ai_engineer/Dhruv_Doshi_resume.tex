@@ -1,0 +1,163 @@
+%-------------------------
+% Resume in Latex
+% Author : Dhruv Doshi (Tailored for AI Engineer - GenAI/RAG/LLM Focus)
+% Website: https://doshidhruv.com
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://doshidhruv.com/}{\Large Dhruv Doshi}} & Email : \href{mailto:work@doshidhruv.com}{work@doshidhruv.com}\\
+  \href{https://doshidhruv.com/}{https://www.doshidhruv.com} & Mobile : +1-902-989-1274 \\
+\end{tabular*}
+
+%-----------SKILLS-----------
+\section{Technical Skills}
+\begin{description}[noitemsep, topsep=0pt, leftmargin=*]
+\item[] \textbf{Generative AI \& LLMs:} LLMs, RAG, LangChain, LangGraph, Multi-Agent Workflows, Agentic Frameworks, Prompt Engineering, Vector Databases (pgvector, Pinecone), Embeddings, OpenAI API, HuggingFace, LLM Evaluation Frameworks
+
+\item[] \textbf{Cloud \& ML Infrastructure:} AWS (Bedrock, EKS, Lambda, API Gateway, CodePipeline, SageMaker, Kinesis), Kubernetes, Docker, Terraform, CI/CD Pipelines, Containerization, Microservices
+
+\item[] \textbf{Programming Languages:} Python, TypeScript, JavaScript, SQL, Go
+
+\item[] \textbf{Data \& Observability:} Kafka, Airflow, Snowflake, OpenTelemetry, Distributed Tracing, Anomaly Detection, Alerting Pipelines, MLOps Best Practices, Model Evaluation
+
+\item[] \textbf{Architecture \& Design:} Enterprise Architecture, Responsible AI, AI Governance, API Design, Zero-Trust Security, IAM
+\end{description}
+
+%-----------EXPERIENCE-----------------
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Royal Bank of Canada (RBC)}{Toronto, Canada}
+      {Staff Software Developer \& Enterprise Architect}{Nov 2022 -- Present}
+      \resumeItemListStart
+        \resumeItem{GenAI Architecture Solution Blueprint (ASB Assist)}
+          {Architected and built enterprise-scale generative AI chat interface enabling natural-language architecture generation using LLM + RAG pipeline; auto-generates compliant architecture diagrams, injects security patterns (OAuth, Zero-Trust, MCP gateways, agent gateways), and provisions real-time enterprise service recommendations; integrated with LangChain for agentic workflows and multi-agent orchestration across cloud environments.}
+        \resumeItem{AI Governance \& Responsible AI Framework}
+          {Defined and operationalized enterprise-wide AI governance framework covering Responsible AI, model risk assessment, regulatory compliance (GDPR, OSFI), audit trails, and Sovereign AI constraints; adopted org-wide across multi-cloud deployments (AWS, GCP, OCP).}
+        \resumeItem{Logging as a Service (LAS) \& MLOps Platform}
+          {Architected institution-wide observability infrastructure (Vector + Fluent Bit + Kafka + Logstash) ingesting 150 TB/day; designed OpenTelemetry schema enabling vendor-agnostic switching and MLOps use cases; enabled observability for AI/ML operations across 10,000+ systems with real-time anomaly detection and performance optimization.}
+        \resumeItem{Architecture Recommendation Engine}
+          {Engineered pattern-based agent-architecture recommendation system mapping 1,000+ architecture patterns to real-time component selections; implemented auto-certification workflow eliminating manual architecture review for compliant solutions.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {HealthCard (Acquired Startup)}{Remote}
+      {Full Stack Engineer \& Cloud Architect}{Aug 2021 -- Jul 2022}
+      \resumeItemListStart
+        \resumeItem{AI-Driven Verification \& Document Intelligence}
+          {Built end-to-end full-stack platform (React/TypeScript frontend, Node.js REST APIs, blockchain verification layer) for insurance payments; integrated transformer-based ML models for automated medical record parsing and credential verification, reducing manual review by 60\%; deployed on AWS EKS with HIPAA-compliant audit logging and containerized microservices.}
+        \resumeItem{Kubernetes \& Cloud Infrastructure}
+          {Containerized production workloads on AWS EKS; implemented CI/CD pipelines for automated deployment; scaled infrastructure from 0 to 20+ engineers with fully operationalized K8s environment.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Dalhousie University}{Halifax, Canada}
+      {Research \& Teaching Assistant}{Jan 2021 -- Aug 2022}
+      \resumeItemListStart
+        \resumeItem{Advanced Cloud Computing \& ML Systems}
+          {Taught graduate-level cloud computing and designed Python-based system for ML model evaluation and testing; built cloud lab infrastructure for hands-on distributed systems education.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Selected Projects}
+\resumeSubHeadingListStart
+
+  \resumeSubItem{Multi-Agent RAG Orchestration System}
+      {Designed and deployed a production-grade multi-agent system using LangGraph and LangChain for document intelligence and knowledge retrieval; integrated with pgvector for semantic search across 100K+ documents; implemented real-time evaluation metrics and observability dashboards; achieved 95\% answer accuracy on enterprise Q\&A use cases.}
+
+  \resumeSubItem{Flight Price Optimization Agent}
+      {Built reinforcement learning agent (DQN/DDQN, Python) for dynamic pricing optimization; trained on historical flight data achieving 18\% improvement over baseline; deployed real-time inference endpoint via AWS SageMaker and Lambda with sub-100ms latency.}
+
+  \resumeSubItem{DCS-BBN: Decentralized Storage Network}
+      {Architected peer-to-peer archival storage system using Solidity smart contracts and Hyperledger Fabric; published in Springer ICMR International Conference on Mobile Computing; demonstrated large-scale distributed system design and blockchain integration.}
+
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Toronto, School of Continuing Studies}{Toronto, Canada}
+      {Certificate in Enterprise Architecture (3-Semester Program)}{Completed May 2024}
+
+    \resumeSubheading
+      {Dalhousie University}{Halifax, Canada}
+      {Master of Applied Computer Science; GPA: 3.9/4.0}{Jan 2021 -- Aug 2022}
+
+    \resumeSubheading
+      {Gujarat Technological University}{Ahmedabad, India}
+      {Bachelor of Engineering in Computer Engineering; GPA: 3.92/4.0}{Aug 2016 -- Aug 2020}
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}

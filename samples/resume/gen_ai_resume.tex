@@ -1,0 +1,179 @@
+%-------------------------
+% Resume in Latex
+% Author : Dhruv Doshi (Synthesized for Gen AI/ML Focus - Corrected Formatting)
+% Website: https://github.com/DhruvDoshi
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands (from provided samples)
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://doshidhruv.com/}{\Large Dhruv Doshi}} & Email : \href{mailto:Work@doshidhruv.com}{Work@doshidhruv.com}\\
+  \href{https://doshidhruv.com/}{https://www.doshidhruv.com} & Mobile : +1-902-989-1274 \\
+\end{tabular*}
+
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+      \resumeSubheading
+      {\href{https://www.utoronto.ca/}{University of Toronto, School of Continuing Studies}}{Toronto, Canada}
+      {Certificate in Enterprise Architecture (3 Semesters) (Completed)}{May 2023 – Apr 2025}
+      
+    \resumeSubheading
+      {\href{https://www.dal.ca/}{Dalhousie University}}{Halifax, Canada}
+      {Master of Applied Computer Science; GPA: 3.9/4.0}{Jan 2021 – Aug 2022}
+    \resumeSubheading
+      {\href{https://www.gtu.ac.in/}{Gujarat Technological University}}{Ahmedabad, India}
+      {Bachelor of Engineering in Computer Engineering; GPA: 3.92 (9.34/10.0)}{Aug 2016 – Aug 2020}
+    % Optional: Add UofT Cert if relevant/space permits
+    % \resumeSubheading
+    %   {\href{https://www.utoronto.ca/}{University of Toronto, School of Continuing Studies}}{Toronto, Canada}
+    %   {Certificate in Enterprise Architecture (Ongoing)}{May 2023 – Present}
+  \resumeSubHeadingListEnd
+
+%--------SKILLS------------
+% Using the 'description' format from Resume 2 & 4 samples
+\section{Technical Skills}
+\begin{description}[noitemsep, topsep=0pt, leftmargin=*]
+\item[] \textbf{ML Domains:} Personalization, Ranking, Candidate Retrieval, Recommender Systems,
+Reinforcement Learning (DQN, DDQN), NLP, Time Series Modeling (ARIMA)
+
+
+\item[] \textbf{ML Frameworks \& Libraries:} PyTorch, TensorFlow, Keras, Scikit-learn, Pandas, NumPy
+
+
+\item[] \textbf{Generative AI:} LLMs, Retrieval-Augmented Generation (RAG), LangChain,
+Hugging Face Transformers, Vector Databases (Pinecone, Chroma)
+
+
+\item[] \textbf{Programming Languages:} Python, Go, SQL, JavaScript
+
+
+\item[] \textbf{Data Processing \& Storage:} Apache Spark, Streaming Pipelines,
+PostgreSQL, MySQL, MongoDB, DynamoDB, ElasticSearch
+
+
+\item[] \textbf{Cloud \& MLOps:} AWS, GCP, Docker, Kubernetes (EKS), Terraform,
+CI/CD, Model Deployment, Observability
+\end{description}
+
+%-----------EXPERIENCE-----------------
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Royal Bank of Canada (RBC)}{Toronto, Canada}
+      {Staff Software Developer | Enterprise Architect}{Nov 2022 – Present}
+      \resumeItemListStart
+        \resumeItem{Generative AI for Architecture Solution Blueprint (ASB)}
+          {Leading the development of a cutting-edge platform that creates architecture solution blueprints and diagrams based on user requirements, enabling automated and scalable infrastructure design.}
+        \resumeItem{OpenTelemetory Log Collector}
+          {Designed and led implementation of an enterprise log ingestion open telemetry based collectors which reduces point to point integration and allows all rbc logs to be in single format, easily consumable by downstream like AIOPS and MLOPS.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {HealthCard}{Halifax, Canada}
+      {Cloud \& Blockchain Architect (AI Focus)}{Mar 2022 – Nov 2022}
+      \resumeItemListStart
+        \resumeItem{AI-Driven Verification Engine}
+          {Architected and contributed to a document verification system leveraging AI algorithms (AWS Lambda) integrated with Hyperledger Fabric for secure, automated credential validation.}
+        \resumeItem{ML Model Deployment Infrastructure}
+          {Led migration from monolithic architecture to scalable microservices on AWS EKS, establishing a robust platform for deploying containerized applications, including ML models.}
+      \resumeItemListEnd
+
+
+\resumeSubheading
+  {Dalhousie University}{Halifax, Canada}
+  {Research \& Teaching Assistant}{Sept 2021 -- Aug 2022}
+  \resumeItemListStart
+    \resumeItem{Advance Cloud \& Data Science}
+      {Taught graduate cloud labs and built a Python-based visualizer to enhance CS pedagogy in program traceability.}
+  \resumeItemListEnd
+  \resumeSubHeadingListEnd
+%-----------PROJECTS-----------------
+\section{Selected AI/ML Projects}
+% Using \resumeSubItem as defined and used in samples for Projects - Shortened Descriptions
+\resumeSubHeadingListStart
+
+  \resumeSubItem{Portfolio Risk Optimization Framework}
+      {Developed a Python quantitative trading framework using MPT, \textbf{predictive modeling} (ARIMA, RF), and \textbf{Monte Carlo}. Deployed scalable analytics on AWS using \textbf{SageMaker} \& \textbf{Lambda}.}
+
+  \resumeSubItem{Flight Price Optimization Agent}
+      {Built a \textbf{Reinforcement Learning} agent (DQN/DDQN, Python) for flight price forecasting and optimization. Deployed real-time inference endpoint via \textbf{AWS SageMaker} \& API Gateway.}
+
+   \resumeSubItem{Automatic Trading Algorithm}
+        {Engineered a sub-second automatic trading algorithm integrated with brokerage APIs. Performed \textbf{real-time data analysis} for autonomous \textbf{quantitative decision-making}.}
+
+    \resumeSubItem{DCS-BBN: Decentralized Storage with Data Analysis}
+     {Architected decentralized storage (Blockchain/AWS S3); performed \textbf{statistical modeling} for data reliability analysis. Published internationally (Springer). \href{https://link.springer.com/chapter/10.1007/978-3-030-49795-8_54}{[Publication Link]}}
+
+\resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}

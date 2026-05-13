@@ -1,0 +1,207 @@
+%-------------------------
+% Resume in Latex
+% Author : Dhruv Doshi
+% Website: https://github.com/DhruvDoshi
+% License : MIT
+
+
+% PROGRAMMING SKILLS 
+% TRY 1 & TRY 4 are good.
+
+
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+% \newcommand{\customTemp}[2]{\item{#1}{#2}\vspace{-4pt}}
+
+
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://doshidhruv.com/}{\Large Dhruv Doshi}} & Email : \href{mailto:Work@doshidhruv.com}{Work@doshidhruv.com}\\
+  \href{https://doshidhruv.com/}{https://www.doshidhruv.com} & Mobile : +1-902-989-1274 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {\href{https://www.dal.ca/}{Dalhousie University}}{Halifax, CA}
+      {Master of Applied Computer Science;  GPA: 3.9}{Jan. 2021 -- Aug. 2022}
+    \resumeSubheading
+      {\href{https://www.gtu.ac.in/}{Gujarat Technological University}}{Ahmedabad, India}
+      {Bachelor of Engineering in Computer Engineering;  GPA: 3.92 (9.34/10.0)}{Aug. 2016 -- Aug. 2020}
+  \resumeSubHeadingListEnd
+
+
+
+% %--------PROGRAMMING SKILLS------------
+% % % Programming Skills
+\section{Programming Skills}
+    \begin{description}[noitemsep,topsep=0pt,leftmargin=*]
+        \item[] \indent{\textbf{Programming: }Python, R, SQL, MATLAB, Go}
+        \item[] {\textbf{Tools:} TensorFlow, PyTorch, Pandas, NumPy, Scikit-learn, Tableau}
+        \item[] {\textbf{Quantitative: }Data Analysis, Statistical Modeling, Time Series and Predictive, Monte Carlo Simulation}
+        \item[] {\textbf{Algorithms \& Tech: }Regression, Classification, Reinforcement Learn., Portfolio Optimization, Risk Modeling}
+        \item[] {\textbf{AI \& GenAI Tech: }OpenAI API, LangChain, RAG, Prompt Engineering, Azure AI, Vector DBs (Chroma)}
+        \item[] {\textbf{Databases \& Platforms: }MySQL, PostgreSQL, MongoDB, AWS, GCP, Docker, Kubernetes, ElasticSearch}
+    \end{description}
+
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Royal Bank of Canada}{Toronto, Canada}
+      {Lead Full Stack Developer - Enterprise Architect}{Nov 2022 - Present}
+      \resumeItemListStart
+\resumeItem{Generative AI for Solution Blueprints}
+  {Led the development of an AI-driven platform generating architecture solution diagrams from business requirements, applying NLP and prompt engineering for scalable infrastructure design.}
+\resumeItem{Scalable Data Pipeline Architecture}
+  {Designed a log ingestion architecture on AWS (S3, Lambda, Kinesis) processing \textbf{100TB/day}, enabling time-series analytics and feeding ML-based anomaly detection pipelines.}
+\resumeItem{Cloud Observability for ML Systems}
+  {Architected cross-platform observability using OpenTelemetry and ELK stack, optimizing monitoring for distributed ML models and services.}
+\resumeItem{Infrastructure Governance and Automation}
+  {Developed reusable Terraform modules and security standards for multi-cloud infrastructure supporting critical ML and financial workloads.}
+      \resumeItemListEnd
+
+    % \resumeSubheading
+    %   {Canada Revenue Agency}{Ottawa, Canada}
+    %   {Software Developer Intern}{May 2022 - Nov 2022}
+    %   \resumeItemListStart
+    %     \resumeItem{Secure Portal Re-engineering and Accessibility Improvements}
+    %         {Migrated CRA website from Struts version to Angular version for upgrading. Worked with multiple backend APIs and data flows. Also addressed accessibility issues for specially-abled users by resolving bugs and enhancing the Quartz library used for the development of application components.}
+
+    %   \resumeItemListEnd
+
+    \resumeSubheading
+      {HealthCard}{Halifax, Canada}
+      {Blockchain Architect}{March 2022 - Present}
+      \resumeItemListStart
+        \resumeItem{Verification Engine}
+          {Developing documents verification system with Hyperledger Fabric and Solidity contracts. All the manual document verification would be handled by a blockchain engine working on AI Algorithms}
+        \resumeItem{Containerized Application}
+          {Shifting the monolithic architecture to Kubernetes containerized application transforming it to micros-service architecture.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Dalhousie University}{Halifax, Canada}
+      {Research \& Teaching Assistant}{Sept. 2021 - Aug. 2022}
+      \resumeItemListStart
+        \resumeItem{Advance Topics in Cloud Computing}
+          {Delivered lab for grad students and guided and evaluated the projects}
+        \resumeItem{Research}
+          {Worked on Algorithm and code for tracing table generation of given code. The project's objective is to help new students in computer science to visualize the flow of the code. Developed using Python and HTML}
+      \resumeItemListEnd
+
+    % \resumeSubheading
+    %   {CryptoVantage}{Netherlands}
+    %   {Blockchain Developer}{July 2020 - Dec. 2020}
+    %   \resumeItemListStart
+    %     \resumeItem{Monitoring System}
+    %       {Develop an Illicit transaction detection system on cryptocurrencies single-handedly. Used JavaScript, Python and GO language. Tested the product for vulnerability and potential threats. Leveraged considerable amount of transnational data for optimum solution}
+    %     \resumeItem{Technologies}
+    %       {Python, Go, Solidity, Node.js, MongoDB, AWS, GitHub, Remix, AWS, Unix}
+    %   \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+
+
+  \resumeSubHeadingListStart
+
+  \resumeSubItem{\href{https://doshidhruv.com}{Portfolio Risk Optimization Framework}}
+      {Designed a quantitative framework for portfolio allocation using modern portfolio theory and machine learning. Key features included risk-adjusted returns, Sharpe ratio analysis, backtesting on historical data, Monte Carlo simulations, and predictive modeling with ARIMA and Random Forests. Built in Python with financial API integration and data visualization.}
+    
+\resumeSubItem{Automatic Trading Algorithm}
+  {Developed a latency-sensitive trading algorithm integrating with a live brokerage, executing systematic equity strategies informed by real-time market signals and risk thresholds.}
+
+
+    \resumeSubItem{\href{https:doshidhruv.com}{DCS-BBN}}
+     {Engineered a decentralized cloud storage solution leveraging Blockchain and cryptographic algorithms. Performed \textbf{statistical modeling and data reliability analysis} to ensure secure data storage across distributed systems. Published the paper \href{https://link.springer.com/chapter/10.1007/978-3-030-49795-8_54}{\textbf{Blockchain-Based Decentralized Cloud Storage}} in Springer’s \textit{International Conference on Mobile Computing and Sustainable Informatics}.}
+
+    \resumeSubItem{\href{https://github.com/DhruvDoshi/Flight_Price_Agent_Machine_Learning}{Flight Agent}}
+      {Designed a reinforcement learning-based system for airline price optimization. Utilized \textbf{DQN and DDQN models} to forecast price trends and provide \textbf{quantitative purchase recommendations} to users.}
+    % \resumeSubItem{\href{https://github.com/DhruvDoshi/Ticket_Booking_System}{Cloud Booking}}
+    %   {Using AWS \& GCP service developed user configurable cloud booking application. }
+    
+  \resumeSubHeadingListEnd
+
+
+
+
+%-------------------------------------------
+\end{document}

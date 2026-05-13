@@ -1,0 +1,18 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "decode_qr.mjs",
+      "file_type": "code",
+      "source_file": "decode_qr.mjs",
+      "source_location": "L1",
+      "id": "decode_qr_mjs",
+      "community": 0,
+      "norm_label": "decode_qr.mjs"
+    }
+  ],
+  "links": [],
+  "hyperedges": []
+}
