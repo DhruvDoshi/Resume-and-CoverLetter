@@ -1,0 +1,115 @@
+\documentclass[letterpaper,9.5pt]{article}
+\usepackage{latexsym}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage[top=0.25in, bottom=0.25in, left=0.5in, right=0.5in]{geometry}
+\usepackage{fancyhdr}
+\pagestyle{fancy}\fancyhf{}\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\urlstyle{same}\raggedbottom\raggedright
+\setlength{\tabcolsep}{0in}
+\titleformat{\section}{\vspace{-7pt}\scshape\raggedright\large}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+\newcommand{\resumeItem}[2]{\item\small{\textbf{#1}{: #2 \vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{\vspace{-2pt}\item\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}\textbf{#1} & #2 \\\textit{\small#3} & \textit{\small #4} \\\end{tabular*}\vspace{-6pt}}
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\renewcommand{\labelitemii}{$\circ$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-6pt}}
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Dhruv Doshi} & \href{mailto:work@doshidhruv.com}{work@doshidhruv.com}\\
+  \href{https://www.doshidhruv.com}{doshidhruv.com} & +1-902-989-1274 $|$ Toronto, Canada\\
+\end{tabular*}
+
+%-----------SKILLS-----------------
+\section{Skills}
+\begin{itemize}[leftmargin=*,itemsep=-2pt]
+  \small{
+    \item \textbf{Quantitative \& Research:} Statistical modelling, time-series analysis, hypothesis testing, experiment design, backtesting, Monte Carlo simulation, performance monitoring, Python (Pandas, NumPy, SciPy), R, MATLAB
+    \item \textbf{ML \& Optimization:} PyTorch, TensorFlow, Scikit-learn, reinforcement learning (DQN/DDQN), regression, classification, portfolio optimization, anomaly detection
+    \item \textbf{Data \& Pipelines:} SQL, Kafka, Airflow, Snowflake, Elasticsearch, Redis, OpenTelemetry, ELK Stack, ETL, schema design, real-time streaming
+    \item \textbf{Languages \& Tools:} Python, Go, TypeScript, JavaScript, SQL $|$ Git, Jupyter, Tableau
+    \item \textbf{Cloud \& Platforms:} AWS (Kinesis, Lambda, SageMaker, S3), Docker, Kubernetes, Terraform, CI/CD
+  }
+\end{itemize}
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Royal Bank of Canada (RBC)}{Toronto, Canada}
+    {Staff Software Developer \& Enterprise Architect}{Nov 2022 -- Present}
+  \resumeItemListStart
+    \resumeItem{Logging as a Service (LAS)}
+      {Architected institution-wide log repatriation platform (Vector, Fluent Bit, Kafka, Logstash) ingesting 150\,TB/day across 10,000+ systems; defined OpenTelemetry log and metric schemas; enabled vendor-agnostic observability switching (Dynatrace, Datadog, Splunk) as a configuration change; eliminated point-to-point third-party integrations institution-wide.}
+    \resumeItem{M365 Log Repatriation}
+      {Designed custom collector repatriating Microsoft 365 audit logs (Exchange, SharePoint) at 60\,TB/day with geolocation tagging; removed Microsoft data-custody dependencies and standardised high-volume pipeline monitoring for operational analytics.}
+    \resumeItem{OpenTelemetry Standardisation}
+      {Drove vendor-agnostic OTel adoption as institutional standard; authored collection pipelines, schema contracts, and SDK onboarding guides adopted by 20+ engineering teams; standardised formats for AIOps and operational analytics use cases.}
+    \resumeItem{ASB Builder (Patent-Pending, Rules-Based Engine)}
+      {Led 0-to-1 delivery of enterprise architecture blueprint platform (Node.js/TypeScript, React) with pattern-based recommendation engine, auto-certification workflow, and real-time data rendering; maps 1,000+ architecture patterns to component selections---rules- and data-driven, not ML-based.}
+    \resumeItem{Technical Reference Model \& Team Leadership}
+      {Digitalised RBC technical reference model (1,000+ technologies, 1,500+ capabilities); led 5 engineers with sprint delivery, code reviews, and ADRs; partnered with product, risk, and architecture stakeholders in Enterprise Architecture (Athena) certification workflows.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {HealthCard (Acquired Startup)}{Remote}
+    {Blockchain Architect \& First Full Stack Engineer}{Aug 2021 -- Jul 2022}
+  \resumeItemListStart
+    \resumeItem{Insurance Validation Algorithm}
+      {Designed proprietary validation and trust-score logic on Hyperledger Fabric for real-time premium verification and fraud-resistant claims processing; joined as first engineer and scaled platform to 20+ engineers before acquisition.}
+    \resumeItem{ML Document Classification}
+      {Integrated transformer-based models for medical record parsing on AWS EKS with HIPAA-compliant audit logging; reduced manual review overhead by 60\% and enabled real-time credential verification at scale.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {Dalhousie University}{Halifax, Canada}
+    {Research \& Teaching Assistant}{Jan 2021 -- Aug 2022}
+  \resumeItemListStart
+    \resumeItem{Compiler/Runtime Research \& Instruction}
+      {Research assistant on call-stack decision algorithms and Python tracing-table tooling for compiler/runtime research; TA for graduate Software Development \& Algorithms and Advanced Cloud Computing plus undergraduate software development labs.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {CryptoVantage}{Netherlands (Remote)}
+    {Blockchain Developer}{Jul 2020 -- Dec 2020}
+  \resumeItemListStart
+    \resumeItem{Illicit Transaction Detection Engine}
+      {Built real-time on-chain analytics in Go/JavaScript with Ethereum event streaming, ML-based wallet clustering, and risk scoring for 5AMLD (EU Anti-Money Laundering Directive) compliance workflows.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+\resumeSubHeadingListStart
+  \resumeSubItem{Automatic Trading Algorithm (Personal)}
+    {Sub-second latency personal project integrating live brokerage APIs and real-time market data streams; momentum and mean-reversion quantitative signals with automated risk management and position sizing.}
+  \resumeSubItem{Flight Price Optimization Agent (Personal)}
+    {Reinforcement learning agent (DQN/DDQN, Python) for dynamic pricing optimisation---modelled demand curves on historical flight data with 18\% improvement over baseline in simulation.}
+  \resumeSubItem{DCS-BBN (Decentralised Cloud Storage)}
+    {Peer-to-peer archival storage using Solidity smart contracts, Hyperledger Fabric ledger, and zk-SNARK proofs. \textbf{Published -- Springer ICMR International Conference on Mobile Computing.}}
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Dalhousie University}{Halifax, Canada}
+    {MASc Applied Computer Science, GPA: 3.9/4.0 $|$ TA: Algorithms, Advanced Cloud Computing}{Jan 2021 -- Aug 2022}
+  \resumeSubheading
+    {Gujarat Technological University}{Ahmedabad, India}
+    {B.E. Computer Engineering, GPA: 3.92/4.0}{Aug 2016 -- Aug 2020}
+\resumeSubHeadingListEnd
+
+\end{document}
