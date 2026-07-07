@@ -1,0 +1,121 @@
+\documentclass[letterpaper,9.5pt]{article}
+\usepackage{latexsym}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage[top=0.25in, bottom=0.25in, left=0.5in, right=0.5in]{geometry}
+\usepackage{fancyhdr}
+\pagestyle{fancy}\fancyhf{}\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\urlstyle{same}\raggedbottom\raggedright
+\setlength{\tabcolsep}{0in}
+\titleformat{\section}{\vspace{-7pt}\scshape\raggedright\large}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+\newcommand{\resumeItem}[2]{\item\small{\textbf{#1}{: #2 \vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{\vspace{-2pt}\item\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}\textbf{#1} & #2 \\\textit{\small#3} & \textit{\small #4} \\\end{tabular*}\vspace{-6pt}}
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\renewcommand{\labelitemii}{$\circ$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-6pt}}
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Dhruv Doshi} & \href{mailto:work@doshidhruv.com}{work@doshidhruv.com}\\
+  \href{https://www.doshidhruv.com}{doshidhruv.com} & +1-902-989-1274 $|$ Toronto, Canada $|$ Montreal / Global\\
+\end{tabular*}
+
+%-----------SKILLS-----------------
+\section{Skills}
+\begin{itemize}[leftmargin=*,itemsep=-2pt]
+  \small{
+    \item \textbf{Python Data Engineering}: Python, SQL, Pandas, ETL/ELT, data ingestion, transformations, validation, reusable libraries
+    \item \textbf{Databases}: PostgreSQL, MySQL, Snowflake, Redis, Elasticsearch, schema design, query construction, data modelling
+    \item \textbf{Pipelines}: Kafka, Airflow, batch/stream processing, scheduling, backfills, data quality checks, lineage, replayability
+    \item \textbf{Data Transfer}: AWS S3, HTTP APIs, REST APIs, file ingestion, audit logs, secure data handling, vendor feeds
+    \item \textbf{Distributed Systems}: microservices, APIs, event-driven workflows, caching, parallel processing, resilient services
+    \item \textbf{Cloud/Infra}: AWS, Kubernetes, Docker, Terraform, CI/CD, Linux, Git, GitHub Actions, production deployments
+    \item \textbf{Reliability}: OpenTelemetry, ELK, CloudWatch, monitoring, alerting, SLOs, runbooks, production support
+    \item \textbf{Collaboration}: researcher onboarding, requirements analysis, technical specs, ADRs, code reviews, stakeholder demos
+  }
+\end{itemize}
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Royal Bank of Canada (RBC)}{Toronto, Canada}
+    {Staff Software Developer \& Enterprise Architect -- Data / Platform}{Nov 2022 -- Present}
+  \resumeItemListStart
+    \resumeItem{High-Scale Data Pipeline Platform}
+      {Architected telemetry platform using OpenTelemetry, Vector, Fluent Bit, Kafka, and Logstash ingesting 150\,TB/day across 10,000+ systems; standardised schemas, transformations, routing, validation, alerting, and replayable ingestion patterns for downstream analytics.}
+    \resumeItem{Reusable Frameworks \& Libraries}
+      {Built shared platform abstractions, onboarding guides, schema contracts, and reusable service patterns adopted by 20+ teams; reduced point-to-point integrations and improved quality, maintainability, and throughput for data producers and consumers.}
+    \resumeItem{Researcher/Stakeholder Dataset Workflows}
+      {Work directly with architecture, infrastructure, product, security, and risk stakeholders to analyze requirements, model data, define query-friendly structures, build technical specs, and iterate through demos and production feedback.}
+    \resumeItem{Production Support \& Reliability}
+      {Own operational readiness for critical data components through CI/CD, monitoring, runbooks, incident triage, escalation paths, data-readiness checks, SLOs, and normal-hours production support for regulated environments.}
+    \resumeItem{0-to-1 Platform Delivery}
+      {Led production delivery of patent-pending blueprint platform (Node.js/TypeScript, React, REST APIs) with real-time data rendering, rules-based recommendations, auto-certification workflows, and secure service matching.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {HealthCard (Acquired Startup)}{Remote}
+    {Blockchain Architect \& First Full Stack Engineer}{Aug 2021 -- Jul 2022}
+  \resumeItemListStart
+    \resumeItem{Data-Driven Product Build}
+      {Joined as first engineer and built React/TypeScript frontend, Node.js/Express APIs, AWS EKS deployment, audit logging, verification workflows, and trust-score data models for real-time premium validation and fraud-resistant claims processing.}
+    \resumeItem{Document Pipeline Integration}
+      {Integrated transformer-based document classification and monitoring for medical/insurance records, reducing manual review by 60\%; built production APIs, feedback loops, and HIPAA-aligned audit trails for credential verification.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {Canada Revenue Agency (CRA)}{Ottawa, Canada (Remote)}
+    {Software Developer Co-op}{Apr 2022 -- Nov 2022}
+  \resumeItemListStart
+    \resumeItem{Production Software Modernization}
+      {Migrated federal tax platform UI from Apache Struts to React/TypeScript and contributed to backend APIs serving millions of Canadians with accessibility, quality gates, secure delivery, and maintainable code standards.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {Dalhousie University}{Halifax, Canada}
+    {Research \& Teaching Assistant}{Jan 2021 -- Aug 2022}
+  \resumeItemListStart
+    \resumeItem{Algorithms, Systems \& Cloud}
+      {Researched call-stack decision algorithms and Python tracing tools for compiler/runtime analysis; TA for Algorithms, Software Development, and graduate Advanced Cloud Computing.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+\resumeSubHeadingListStart
+  \resumeSubItem{Market Data Research Pipeline}
+    {Python framework for ingesting market data, validating schemas, constructing query-friendly datasets, running backtests, and producing reproducible analytics for strategy research.}
+  \resumeSubItem{Portfolio Risk Optimization Framework}
+    {Python research system for market data ingestion, portfolio allocation, Sharpe analysis, Monte Carlo simulation, risk-adjusted signals, and repeatable quantitative experiments.}
+  \resumeSubItem{Automatic Trading Algorithm}
+    {Sub-second latency personal project integrating live brokerage APIs and real-time market data streams; momentum/mean-reversion signals with risk controls and performance monitoring.}
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Dalhousie University}{Halifax, Canada}
+    {MASc Applied Computer Science, GPA: 3.9/4.0 $|$ TA: Algorithms, Advanced Cloud Computing}{Jan 2021 -- Aug 2022}
+  \resumeSubheading
+    {University of Toronto}{Toronto, Canada}
+    {Enterprise Architecture Certification (3-semester program)}{Completed 2024}
+  \resumeSubheading
+    {Gujarat Technological University}{Ahmedabad, India}
+    {B.E. Computer Engineering, GPA: 3.92/4.0}{Aug 2016 -- Aug 2020}
+\resumeSubHeadingListEnd
+
+\end{document}
