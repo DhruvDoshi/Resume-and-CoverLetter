@@ -1,0 +1,121 @@
+\documentclass[letterpaper,9.5pt]{article}
+\usepackage{latexsym}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage[top=0.25in, bottom=0.25in, left=0.5in, right=0.5in]{geometry}
+\usepackage{fancyhdr}
+\pagestyle{fancy}\fancyhf{}\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\urlstyle{same}\raggedbottom\raggedright
+\setlength{\tabcolsep}{0in}
+\titleformat{\section}{\vspace{-7pt}\scshape\raggedright\large}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+\newcommand{\resumeItem}[2]{\item\small{\textbf{#1}{: #2 \vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{\vspace{-2pt}\item\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}\textbf{#1} & #2 \\\textit{\small#3} & \textit{\small #4} \\\end{tabular*}\vspace{-6pt}}
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\renewcommand{\labelitemii}{$\circ$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-6pt}}
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Dhruv Doshi} & \href{mailto:work@doshidhruv.com}{work@doshidhruv.com}\\
+  \href{https://www.doshidhruv.com}{doshidhruv.com} & +1-902-989-1274 $|$ Toronto, Canada $|$ Open to Montreal/Remote\\
+\end{tabular*}
+
+%-----------SKILLS-----------------
+\section{Skills}
+\begin{itemize}[leftmargin=*,itemsep=-2pt]
+  \small{
+    \item \textbf{AI/LLM Systems:} LLMs, RAG, LangChain, LangGraph, Agentic AI, tool calling, embeddings, OpenAI API
+    \item \textbf{Vector/Retrieval:} pgvector, Pinecone, HuggingFace, context assembly, grounding controls, citation validation
+    \item \textbf{LLM Evaluation:} offline eval sets, regression metrics, prompt comparison, answer quality, guardrails, tracing
+    \item \textbf{Full Stack:} Python, TypeScript, JavaScript, Go, SQL, React, Node.js, Express, REST APIs, GraphQL
+    \item \textbf{Distributed Systems:} microservices, API design, PostgreSQL, Redis, Kafka, RabbitMQ, event streams
+    \item \textbf{Data Platforms:} Snowflake, Airflow, Elasticsearch, schema design, caching, analytics pipelines, vector search
+    \item \textbf{Cloud/Infra:} AWS Bedrock, SageMaker, Lambda, EKS, Kinesis, S3, Docker, Kubernetes, Terraform, CI/CD
+    \item \textbf{Reliability/Ops:} OpenTelemetry, ELK, CloudWatch, SLOs, alerting, production debugging, incident response
+  }
+\end{itemize}
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Royal Bank of Canada (RBC)}{Toronto, Canada}
+    {Staff Software Developer \& Enterprise Architect -- Applied AI / Full Stack}{Nov 2022 -- Present}
+  \resumeItemListStart
+    \resumeItem{ASB Assist -- Agentic GenAI Platform}
+      {Building conversational AI on RBC's enterprise blueprint platform: natural-language requirements in, compliant architecture diagrams and service recommendations out; LLM + RAG pipeline with LangChain orchestration, tool integration, prompt/context engineering, audit trails, and iterative offline evaluation of answer quality and safety.}
+    \resumeItem{RAG \& Evaluation Infrastructure}
+      {Designed retrieval patterns, grounding controls, context assembly, and model-evaluation workflows for regulated architecture use cases; compare prompt versions, detect regressions, validate citations, and track quality before production rollout.}
+    \resumeItem{0-to-1 Full-Stack Platform Delivery}
+      {Led production delivery of patent-pending blueprint platform (Node.js/TypeScript, React) with rules-based recommendation engine, real-time data rendering, auto-certification, and secure service matching; wrote 99.6\% of production code and 100\% of core logic.}
+    \resumeItem{High-Scale Observability Platform}
+      {Architected telemetry platform using OpenTelemetry, Vector, Fluent Bit, Kafka, and Logstash ingesting 150\,TB/day across 10,000+ systems; standardised schemas enabling AIOps, distributed tracing, latency SLOs, alerting, and production debugging.}
+    \resumeItem{Technical Leadership \& Production Ownership}
+      {Led 5 engineers through technical planning, execution, reviews, ADRs, runbooks, operational handoff, and stakeholder alignment with product, risk, security, infrastructure, and architecture teams.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {HealthCard (Acquired Startup)}{Remote}
+    {Blockchain Architect \& First Full Stack Engineer}{Aug 2021 -- Jul 2022}
+  \resumeItemListStart
+    \resumeItem{AI-Enabled Healthcare/Insurance Platform}
+      {Joined as first engineer and built React/TypeScript frontend, Node.js/Express APIs, Hyperledger Fabric verification, and AWS EKS deployment with HIPAA audit logging; team scaled to 20+ engineers before acquisition.}
+    \resumeItem{Production ML \& Distributed Services}
+      {Integrated transformer-based document classification and trust-score workflows for claims/credential verification; deployed inference APIs, monitoring, and audit trails, reducing manual review by 60\%.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {Canada Revenue Agency (CRA)}{Ottawa, Canada (Remote)}
+    {Software Developer Co-op}{Apr 2022 -- Nov 2022}
+  \resumeItemListStart
+    \resumeItem{Modern Web Platform}
+      {Migrated federal tax platform UI from Apache Struts to React/TypeScript; contributed to backend API layers serving millions of Canadians with WCAG accessibility, automated quality gates, and maintainable code standards.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {Dalhousie University}{Halifax, Canada}
+    {Research \& Teaching Assistant}{Jan 2021 -- Aug 2022}
+  \resumeItemListStart
+    \resumeItem{Systems Research \& Cloud Teaching}
+      {Researched call-stack decision algorithms and Python tracing tools for compiler/runtime analysis; TA for Algorithms, Software Development, and graduate Advanced Cloud Computing.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+\resumeSubHeadingListStart
+  \resumeSubItem{Enterprise Document Q\&A with LLM Eval Harness}
+    {LangChain + pgvector RAG over messy document corpora with offline eval sets, regression metrics, prompt/version comparison, citation validation, and tracing for production-style answer-quality iteration.}
+  \resumeSubItem{Automatic Trading Algorithm}
+    {Sub-second latency personal project integrating live brokerage APIs and real-time market streams; momentum/mean-reversion signals with automated risk management, position sizing, and performance monitoring.}
+  \resumeSubItem{Flight Price Optimization Agent}
+    {DQN/DDQN reinforcement-learning agent in Python for dynamic pricing; modelled demand curves on historical flight data and improved simulated outcome by 18\% over baseline.}
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Dalhousie University}{Halifax, Canada}
+    {MASc Applied Computer Science, GPA: 3.9/4.0 $|$ TA: Algorithms, Advanced Cloud Computing}{Jan 2021 -- Aug 2022}
+  \resumeSubheading
+    {University of Toronto}{Toronto, Canada}
+    {Enterprise Architecture Certification (3-semester program)}{Completed 2024}
+  \resumeSubheading
+    {Gujarat Technological University}{Ahmedabad, India}
+    {B.E. Computer Engineering, GPA: 3.92/4.0}{Aug 2016 -- Aug 2020}
+\resumeSubHeadingListEnd
+
+\end{document}
