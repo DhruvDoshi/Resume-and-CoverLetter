@@ -1,0 +1,121 @@
+\documentclass[letterpaper,9.5pt]{article}
+\usepackage{latexsym}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage[top=0.25in, bottom=0.25in, left=0.5in, right=0.5in]{geometry}
+\usepackage{fancyhdr}
+\pagestyle{fancy}\fancyhf{}\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\urlstyle{same}\raggedbottom\raggedright
+\setlength{\tabcolsep}{0in}
+\titleformat{\section}{\vspace{-7pt}\scshape\raggedright\large}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+\newcommand{\resumeItem}[2]{\item\small{\textbf{#1}{: #2 \vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{\vspace{-2pt}\item\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}\textbf{#1} & #2 \\\textit{\small#3} & \textit{\small #4} \\\end{tabular*}\vspace{-6pt}}
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\renewcommand{\labelitemii}{$\circ$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-6pt}}
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Dhruv Doshi} & \href{mailto:work@doshidhruv.com}{work@doshidhruv.com}\\
+  \href{https://www.doshidhruv.com}{doshidhruv.com} & +1-902-989-1274 $|$ Toronto, Canada $|$ Montreal / Global\\
+\end{tabular*}
+
+%-----------SKILLS-----------------
+\section{Skills}
+\begin{itemize}[leftmargin=*,itemsep=-2pt]
+  \small{
+    \item \textbf{Risk/Data Pipelines}: Python, SQL, Pandas, ETL/ELT, trade ingestion, normalization, reconciliation, P\&L analytics
+    \item \textbf{Financial Systems}: risk controls, position/inventory monitoring, exposure analytics, trade booking, regulatory feeds
+    \item \textbf{Market/Trade Data}: Kafka, Airflow, streaming pipelines, batch processing, data validation, lineage, replayability
+    \item \textbf{Databases}: PostgreSQL, MySQL, Redis, Elasticsearch, Snowflake, schema design, query tuning, data modelling
+    \item \textbf{Integrations}: REST APIs, HTTP, file feeds, vendor data, audit logs, secure routing, FIX protocol concepts
+    \item \textbf{Cloud/Infra}: AWS, S3, Lambda, EKS, Docker, Kubernetes, Terraform, CI/CD, Linux, GitHub Actions
+    \item \textbf{Reliability}: OpenTelemetry, ELK, CloudWatch, monitoring, alerting, SLOs, runbooks, level-2 support
+    \item \textbf{Leadership}: requirements capture, architecture design, bottleneck analysis, code reviews, mentoring, demos
+  }
+\end{itemize}
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Royal Bank of Canada (RBC)}{Toronto, Canada}
+    {Staff Software Developer \& Enterprise Architect -- Data / Risk Platform}{Nov 2022 -- Present}
+  \resumeItemListStart
+    \resumeItem{High-Scale Risk-Style Data Pipelines}
+      {Architected telemetry platform using OpenTelemetry, Vector, Fluent Bit, Kafka, and Logstash ingesting 150\,TB/day across 10,000+ systems; standardised schemas, transformations, routing, validation, alerting, replayable ingestion, and downstream analytics.}
+    \resumeItem{Real-Time Monitoring \& Controls}
+      {Designed production controls for critical platform data flows including readiness checks, traceability, SLOs, anomaly detection, incident triage, escalation paths, runbooks, and level-2 support workflows for regulated systems.}
+    \resumeItem{Trade-Like Data Normalization}
+      {Built reusable ingestion and integration patterns to normalize heterogeneous enterprise events into governed schemas, reduce point-to-point vendor feeds, and make downstream analytics queryable and auditable across teams.}
+    \resumeItem{Stakeholder Requirements \& Architecture}
+      {Partner with architecture, product, infrastructure, security, and risk teams to capture requirements, define architecture and technologies, identify bottlenecks, demo functionality, and drive improvements after production launch.}
+    \resumeItem{Technical Leadership}
+      {Led 5 engineers through design discussions, code reviews, testing expectations, ADRs, documentation, mentoring, and reusable platform standards adopted by 20+ engineering teams.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {HealthCard (Acquired Startup)}{Remote}
+    {Blockchain Architect \& First Full Stack Engineer}{Aug 2021 -- Jul 2022}
+  \resumeItemListStart
+    \resumeItem{Financial Workflow Automation}
+      {Joined as first engineer and built React/TypeScript frontend, Node.js/Express APIs, AWS EKS deployment, audit logging, verification workflows, and trust-score data models for real-time premium validation and claims processing.}
+    \resumeItem{Reconciliation \& Validation Pipelines}
+      {Designed insurance validation logic and document classification workflows with monitoring, feedback loops, and HIPAA-aligned audit trails; reduced manual review by 60\% while improving correctness of credential verification.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {CryptoVantage}{Netherlands (Remote)}
+    {Blockchain Developer}{Jul 2020 -- Dec 2020}
+  \resumeItemListStart
+    \resumeItem{Real-Time Risk Scoring}
+      {Built on-chain analytics in Go/JavaScript with Ethereum event streaming, wallet clustering, and risk scoring for AML-style transaction monitoring and suspicious-pattern detection.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {Dalhousie University}{Halifax, Canada}
+    {Research \& Teaching Assistant}{Jan 2021 -- Aug 2022}
+  \resumeItemListStart
+    \resumeItem{Algorithms, Systems \& Cloud}
+      {Researched call-stack decision algorithms and Python tracing tools for compiler/runtime analysis; TA for Algorithms, Software Development, and graduate Advanced Cloud Computing.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+\resumeSubHeadingListStart
+  \resumeSubItem{Trade Reconciliation Pipeline}
+    {Python prototype for normalizing broker/trade-like feeds, validating booking fields, reconciling positions and P\&L deltas, and producing exception reports with replayable audit logs.}
+  \resumeSubItem{Automatic Trading Algorithm}
+    {Sub-second latency personal project integrating live brokerage APIs and real-time market data streams; momentum/mean-reversion signals with risk controls, position sizing, and performance monitoring.}
+  \resumeSubItem{Portfolio Risk Optimization Framework}
+    {Python research system for market data ingestion, portfolio allocation, Sharpe analysis, Monte Carlo simulation, risk-adjusted signals, and repeatable quantitative experiments.}
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Dalhousie University}{Halifax, Canada}
+    {MASc Applied Computer Science, GPA: 3.9/4.0 $|$ TA: Algorithms, Advanced Cloud Computing}{Jan 2021 -- Aug 2022}
+  \resumeSubheading
+    {University of Toronto}{Toronto, Canada}
+    {Enterprise Architecture Certification (3-semester program)}{Completed 2024}
+  \resumeSubheading
+    {Gujarat Technological University}{Ahmedabad, India}
+    {B.E. Computer Engineering, GPA: 3.92/4.0}{Aug 2016 -- Aug 2020}
+\resumeSubHeadingListEnd
+
+\end{document}

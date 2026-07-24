@@ -1,0 +1,123 @@
+\documentclass[letterpaper,9.5pt]{article}
+\usepackage{latexsym}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage[top=0.25in, bottom=0.25in, left=0.5in, right=0.5in]{geometry}
+\usepackage{fancyhdr}
+\pagestyle{fancy}\fancyhf{}\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\urlstyle{same}\raggedbottom\raggedright
+\setlength{\tabcolsep}{0in}
+\titleformat{\section}{\vspace{-7pt}\scshape\raggedright\large}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+\newcommand{\resumeItem}[2]{\item\small{\textbf{#1}{: #2 \vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{\vspace{-2pt}\item\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}\textbf{#1} & #2 \\\textit{\small#3} & \textit{\small #4} \\\end{tabular*}\vspace{-6pt}}
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\renewcommand{\labelitemii}{$\circ$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-6pt}}
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Dhruv Doshi} & \href{mailto:work@doshidhruv.com}{work@doshidhruv.com}\\
+  \href{https://www.doshidhruv.com}{doshidhruv.com} & +1-902-989-1274 $|$ Toronto, Canada\\
+\end{tabular*}
+
+%-----------SKILLS-----------------
+\section{Skills}
+\begin{itemize}[leftmargin=*,itemsep=-2pt]
+  \small{
+    \item \textbf{Enterprise Architecture}: TOGAF, capability mapping, target-state architecture, governance, standards, roadmaps
+    \item \textbf{Identity/API/Security}: IAM, OAuth, SSO, Zero Trust, API-first architecture, microservices, app security, privacy
+    \item \textbf{Cloud/Platform}: AWS, GCP, Azure patterns, OCP/Kubernetes, Docker, Terraform, CI/CD, SRE, infrastructure as code
+    \item \textbf{Data Platforms}: Kafka, Airflow, Snowflake, PostgreSQL, Redis, Elasticsearch, data governance, schema design
+    \item \textbf{Engineering}: TypeScript, JavaScript, Python, Go, React, Node.js, REST APIs, GraphQL, Spring Boot concepts
+    \item \textbf{Architecture Practice}: ADRs, design reviews, reference models, architecture boards, risk controls, audit trails
+    \item \textbf{Leadership}: executive communication, stakeholder management, product partnership, mentoring, technical strategy
+    \item \textbf{Observability}: OpenTelemetry, ELK, CloudWatch, distributed tracing, alerting, SLOs, production support
+  }
+\end{itemize}
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Royal Bank of Canada (RBC)}{Toronto, Canada}
+    {Staff Software Developer \& Enterprise Architect}{Nov 2022 -- Present}
+  \resumeItemListStart
+    \resumeItem{Enterprise Architecture Strategy \& Governance}
+      {Operate in RBC's Enterprise Architecture group defining target-state architectures, architecture standards, governance patterns, security controls, and solution certification practices across distributed banking platforms.}
+    \resumeItem{ASB Builder Platform -- Patent-Pending}
+      {Designed and led 0-to-1 delivery of enterprise blueprint platform using Node.js, TypeScript, React, REST APIs, real-time data rendering, rules-based recommendations, auto-certification workflows, and secure enterprise service matching.}
+    \resumeItem{Digital Identity, API \& Security Patterns}
+      {Govern API-first, IAM, SSO, OAuth, gateway, Zero Trust, internal/external integration, fraud-resistant workflow, privacy, and data-handling patterns for regulated enterprise solutions across cloud and on-prem environments.}
+    \resumeItem{Data Platform \& Observability Architecture}
+      {Architected OpenTelemetry-based telemetry platform using Vector, Fluent Bit, Kafka, and Logstash ingesting 150\,TB/day across 10,000+ systems; enabled standardized monitoring, auditability, SLOs, and data-driven operations.}
+    \resumeItem{Technical Reference Model}
+      {Digitalised RBC technical reference model covering 1,000+ technologies and 1,500+ capabilities with ownership metadata, enabling data-driven governance, roadmap planning, and modernization decisions.}
+    \resumeItem{Leadership Across Engineering/Data/Infrastructure}
+      {Led 5 engineers through architecture reviews, code reviews, ADRs, sprint delivery, mentoring, executive-ready demos, and alignment with product, risk, security, infrastructure, and engineering stakeholders.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {HealthCard (Acquired Startup)}{Remote}
+    {Blockchain Architect \& First Full Stack Engineer}{Aug 2021 -- Jul 2022}
+  \resumeItemListStart
+    \resumeItem{Secure Platform Architecture}
+      {Joined as first engineer and built React/TypeScript frontend, Node.js/Express APIs, AWS EKS deployment, audit logging, Hyperledger Fabric verification, and trust-score data models for insurance validation and claims workflows.}
+    \resumeItem{Identity, Verification \& Compliance}
+      {Designed fraud-resistant credential verification, document classification, HIPAA-aligned audit trails, and real-time premium validation workflows; reduced manual review by 60\% and supported scale to 20+ engineers before acquisition.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {Canada Revenue Agency (CRA)}{Ottawa, Canada (Remote)}
+    {Software Developer Co-op}{Apr 2022 -- Nov 2022}
+  \resumeItemListStart
+    \resumeItem{Government Digital Platform Modernization}
+      {Migrated federal tax platform UI from Apache Struts to React/TypeScript and contributed to backend APIs serving millions of Canadians with accessibility, security, quality gates, and maintainable code standards.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {Dalhousie University}{Halifax, Canada}
+    {Research \& Teaching Assistant}{Jan 2021 -- Aug 2022}
+  \resumeItemListStart
+    \resumeItem{Algorithms, Systems \& Cloud}
+      {Researched call-stack decision algorithms and Python tracing tools for compiler/runtime analysis; TA for Algorithms, Software Development, and graduate Advanced Cloud Computing.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+\resumeSubHeadingListStart
+  \resumeSubItem{Enterprise AI Architecture Assistant}
+    {LLM + RAG interface under development for generating compliant architecture diagrams, security patterns, and service recommendations from natural-language business requirements.}
+  \resumeSubItem{Enterprise Reference Model Digitization}
+    {Architecture data product linking technology standards, capabilities, application ownership, service patterns, and governance decisions for roadmap and modernization analysis.}
+  \resumeSubItem{DCS-BBN: Blockchain-Based Cloud Storage}
+    {Designed decentralized storage using Solidity, Hyperledger Fabric, and zk-SNARK proofs for privacy-preserving verification; published in Springer ICMR.}
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Dalhousie University}{Halifax, Canada}
+    {MASc Applied Computer Science, GPA: 3.9/4.0 $|$ TA: Algorithms, Advanced Cloud Computing}{Jan 2021 -- Aug 2022}
+  \resumeSubheading
+    {University of Toronto}{Toronto, Canada}
+    {Enterprise Architecture Certification (3-semester program)}{Completed 2024}
+  \resumeSubheading
+    {Gujarat Technological University}{Ahmedabad, India}
+    {B.E. Computer Engineering, GPA: 3.92/4.0}{Aug 2016 -- Aug 2020}
+\resumeSubHeadingListEnd
+
+\end{document}

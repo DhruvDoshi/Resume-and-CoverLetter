@@ -259,6 +259,11 @@ For each job application, create a dedicated folder to keep the workspace clean:
    - Resume: `Dhruv_Doshi_resume.tex`
    - Cover letter: `Dhruv_Doshi_cover_letter.tex`
 
+3. **Final cleanup (always run after successful PDF compilation):**
+   - Remove all generated auxiliary and temporary files from the application folder.
+   - The final application folder must contain only `.tex` and `.pdf` files.
+   - If the cover letter references `Signature.png`, make the LaTeX tolerant of the file being absent after cleanup.
+
 3. **Compile inside the folder** so all auxiliary files (.aux, .log, .out, .fls, .fdb_latexmk, .synctex.gz, etc.) stay contained in that folder.
 
 Example structure after running:
