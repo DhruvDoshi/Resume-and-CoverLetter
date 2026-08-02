@@ -1,0 +1,113 @@
+\documentclass[letterpaper,9.5pt]{article}
+\usepackage{latexsym}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[pdftex,hidelinks]{hyperref}
+\usepackage[top=0.25in, bottom=0.25in, left=0.5in, right=0.5in]{geometry}
+\usepackage{fancyhdr}
+\pagestyle{fancy}\fancyhf{}\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\urlstyle{same}\raggedbottom\raggedright
+\setlength{\tabcolsep}{0in}
+\titleformat{\section}{\vspace{-7pt}\scshape\raggedright\large}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+\newcommand{\resumeItem}[2]{\item\small{\textbf{#1}{: #2 \vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{\vspace{-2pt}\item\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}\textbf{#1} & #2 \\\textit{\small#3} & \textit{\small #4} \\\end{tabular*}\vspace{-6pt}}
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\renewcommand{\labelitemii}{$\circ$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-6pt}}
+
+\begin{document}
+
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Dhruv Doshi} & \href{mailto:work@doshidhruv.com}{work@doshidhruv.com}\\
+  \href{https://www.doshidhruv.com}{doshidhruv.com} & +1-902-989-1274 $|$ Toronto, Canada $|$ Markham-ready\\
+\end{tabular*}
+
+\section{Skills}
+\begin{itemize}[leftmargin=*,itemsep=-2pt]
+  \small{
+    \item \textbf{AI / Deep Learning}: PyTorch, TensorFlow, NumPy, HuggingFace, neural-network inference, model evaluation, quantization concepts
+    \item \textbf{Performance Engineering}: profiling, runtime analysis, latency SLOs, parallelism, caching, resource optimization, production debugging
+    \item \textbf{Programming}: Python, Go, TypeScript, JavaScript, SQL, REST APIs, distributed systems, algorithms, data structures
+    \item \textbf{ML Systems}: inference pipelines, batch/online scoring, model validation, drift detection, anomaly detection, reproducible experiments
+    \item \textbf{Linux / Cloud}: Linux, Docker, Kubernetes, AWS EKS, GCP, Terraform, CI/CD, microservices, secure deployment
+    \item \textbf{Data / Observability}: OpenTelemetry, Kafka, Vector, Fluent Bit, Logstash, ELK, distributed tracing, Prometheus
+    \item \textbf{Leadership}: technical roadmaps, cross-functional delivery, architecture reviews, code reviews, mentoring, stakeholder communication
+  }
+\end{itemize}
+
+\section{Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Royal Bank of Canada (RBC)}{Toronto, Canada}
+    {Staff Software Developer \& Enterprise Architect}{Nov 2022 -- Present}
+  \resumeItemListStart
+    \resumeItem{High-Performance Telemetry Stack}
+      {Architected OpenTelemetry infrastructure using Vector, Fluent Bit, Kafka, and Logstash that ingests 150\,TB/day across 10,000+ systems; optimized resource usage, schema contracts, and vendor-neutral data paths for reliable low-latency processing.}
+    \resumeItem{Profiling, Debugging \& Runtime Visibility}
+      {Standardized telemetry and diagnostic workflows adopted by 20+ engineering teams, enabling performance profiling, distributed tracing, latency SLOs, anomaly detection, and rapid root-cause analysis across production workloads.}
+    \resumeItem{ASB Assist -- Neural AI Feature (In Development)}
+      {Building an LLM + RAG capability with retrieval and inference pipelines, offline evaluation, regression testing, grounding controls, audit trails, and production-readiness gates for regulated enterprise use cases.}
+    \resumeItem{0-to-1 Software Platform Ownership}
+      {Led production delivery of a patent-pending Node.js/TypeScript/React platform; wrote 99.6\% of production code and 100\% of core logic for a rules-based recommendation engine, real-time rendering, service matching, and auto-certification.}
+    \resumeItem{Cross-Functional Technical Leadership}
+      {Lead 5 engineers through design, implementation, code reviews, ADRs, testing, release readiness, and operational handoff while coordinating product, risk, security, platform, and architecture stakeholders.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {HealthCard (Acquired Startup)}{Remote}
+    {Blockchain Architect \& First Full Stack Engineer}{Aug 2021 -- Jul 2022}
+  \resumeItemListStart
+    \resumeItem{Production Neural-Network Inference}
+      {Integrated transformer-based document classification into medical and insurance workflows; deployed inference APIs on AWS EKS with monitoring, audit logging, and feedback loops, reducing manual review by 60\%.}
+    \resumeItem{Full-Stack Platform Engineering}
+      {Built the product from scratch across React/TypeScript, Node.js services, verification logic, and containerized Linux workloads, balancing latency, security, resource usage, and commercial-quality releases.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {Dalhousie University}{Halifax, Canada}
+    {Research \& Teaching Assistant}{Jan 2021 -- Aug 2022}
+  \resumeItemListStart
+    \resumeItem{Compiler / Runtime Algorithms}
+      {Researched call-stack decision algorithms and built Python tracing tools for compiler/runtime analysis; taught Software Development \& Algorithms and graduate Advanced Cloud Computing.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {Canada Revenue Agency (CRA)}{Ottawa, Canada (Remote)}
+    {IT Developer / Software Developer Co-op}{Apr 2022 -- Nov 2022}
+  \resumeItemListStart
+    \resumeItem{Commercial-Quality Software Delivery}
+      {Modernized a federal tax platform serving millions of Canadians and established automated SonarQube quality gates for maintainability, accessibility, and secure releases.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\section{Projects}
+\resumeSubHeadingListStart
+  \resumeSubItem{Edge Neural-Network Performance Lab}
+    {Built a Python, PyTorch, TensorFlow, and NumPy benchmarking prototype to compare model latency, throughput, memory use, numerical accuracy, and quantization tradeoffs across constrained inference configurations.}
+  \resumeSubItem{Flight Price Optimization Agent}
+    {Developed a DQN/DDQN reinforcement-learning agent for dynamic pricing; modelled demand curves on historical data and improved simulated outcomes by 18\% over baseline.}
+\resumeSubHeadingListEnd
+
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Dalhousie University}{Halifax, Canada}
+    {Master of Applied Computer Science, GPA: 3.9/4.0}{Jan 2021 -- Aug 2022}
+  \resumeSubheading
+    {University of Toronto}{Toronto, Canada}
+    {Enterprise Architecture Certification (3-semester program)}{Completed 2024}
+  \resumeSubheading
+    {Gujarat Technological University}{Ahmedabad, India}
+    {B.E. Computer Engineering, GPA: 3.92/4.0}{Aug 2016 -- Aug 2020}
+\resumeSubHeadingListEnd
+
+\end{document}

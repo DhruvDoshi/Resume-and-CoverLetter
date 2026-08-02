@@ -1,0 +1,74 @@
+\documentclass[letterpaper, 11pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames, dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex,hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{\vspace{-4pt}\scshape\raggedright\large}{}{0em}{}[
+\color{black}\titlerule\vspace{-5pt}]
+
+\begin{document}
+
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{\href{http://doshidhruv.com/}{\Large Dhruv Doshi}} & Email : \href{mailto:work@doshidhruv.com}{work@doshidhruv.com} \\
+    \href{https://doshidhruv.com/}{https://www.doshidhruv.com} & Mobile : +1-902-989-1274 \\
+\end{tabular*}
+
+\hrulefill
+
+\bigbreak
+July 29, 2026
+
+\bigbreak
+\centerline{\large\textbf{RE: Senior Software Engineer, Security Agents -- Cohere}}
+
+\bigbreak
+Dear Cohere Hiring Team,
+
+\bigbreak
+I am excited to apply for the Senior Software Engineer, Security Agents role advertised on Cohere's careers site. I am a Toronto-based staff software developer and enterprise architect working at the intersection of agentic AI, security controls, and production platform engineering. Cohere's goal of building autonomous systems for the repetitive but consequential work security practitioners face is a particularly strong fit: I enjoy turning ambiguous security requirements into systems that are useful, constrained, testable, and safe to operate around sensitive data.
+
+\bigbreak
+At RBC, I am building ASB Assist, an LLM + RAG system that converts natural-language requirements into compliant architecture diagrams and enterprise service recommendations. My work includes Python orchestration, retrieval, tool integration, security-pattern injection, scoped access, grounding checks, offline evaluation, guardrails, and complete auditability. ASB Assist builds on ASB Builder, the deterministic TypeScript/React platform I designed and shipped from zero to production. I authored nearly all of its production code and the complete recommendation engine, which maps more than 1,000 security, integration, and infrastructure patterns to real-time component selections and automated certification. Working across both systems has taught me when an agent should reason, when deterministic policy must take control, and where a human approval boundary belongs.
+
+\bigbreak
+I have also operationalized enterprise AI governance spanning IAM, model risk, Responsible AI, data residency, regulatory controls, and auditable deployment across AWS, GCP, and air-gapped OpenShift environments. Separately, I architected an OpenTelemetry platform that ingests 150\,TB per day across more than 10,000 systems using Vector, Fluent Bit, Kafka, and Logstash. Those efforts required production judgment around authorization, schema integrity, failure recovery, observability, and resource-conscious deployment in a high-trust financial environment. Earlier, as HealthCard's first engineer, I built a cloud-native platform with sensitive-data controls, tamper-evident verification, and HIPAA-aligned audit logging.
+
+\bigbreak
+To explore the security-agent problem directly, I built a Python workbench that orchestrates specialized agents for alert triage, repository-aware secure code review, threat modeling, and vulnerability assessment. Tools are isolated behind typed policies, session-scoped credentials, human approval gates, and immutable audit logs. I paired it with adversarial evaluations for prompt injection, tool misuse, privilege escalation, data leakage, and unsafe actions. This work reinforced my belief that useful autonomy depends on rigorous authorization, observable execution, and testing the agent and its hosting platform as one security boundary.
+
+\bigbreak
+At RBC, I lead five engineers through design, implementation, code and security review, testing, ADRs, and operational handoff while remaining deeply involved in the code. I would welcome the opportunity to bring that mix of hands-on Python engineering, secure agent design, full-stack delivery, and cross-functional leadership to Cohere North's Security team.
+
+\bigbreak
+Thank you for your consideration. I would be glad to discuss how my experience can help Cohere ship dependable security agents for demanding enterprise environments.
+
+\bigbreak
+Best regards,\\[1.5ex]
+\IfFileExists{Signature.png}{\includegraphics[height=2.5\baselineskip]{Signature.png}\\}{}
+Dhruv Doshi
+
+\end{document}

@@ -1,0 +1,104 @@
+\documentclass[letterpaper,9.5pt]{article}
+\usepackage{latexsym}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[pdftex,hidelinks]{hyperref}
+\usepackage[top=0.25in,bottom=0.25in,left=0.48in,right=0.48in]{geometry}
+\usepackage{fancyhdr}
+\pagestyle{fancy}\fancyhf{}\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\titleformat{\section}{\vspace{-7pt}\scshape\raggedright\large}{}{0em}{}[\color{black}\titlerule\vspace{-5pt}]
+
+\newcommand{\resumeItem}[2]{\item\small{\textbf{#1}{: #2 \vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{\vspace{-2pt}\item\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}\textbf{#1} & #2 \\\textit{\small#3} & \textit{\small #4} \\\end{tabular*}\vspace{-6pt}}
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-6pt}}
+
+\begin{document}
+
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Dhruv Doshi} & \href{mailto:work@doshidhruv.com}{work@doshidhruv.com} $|$ +1-902-989-1274 \\
+  \href{https://doshidhruv.com}{doshidhruv.com} $|$ \href{https://github.com/DhruvDoshi}{github.com/DhruvDoshi} $|$ \href{https://www.linkedin.com/in/dhruvdoshi25071999/}{LinkedIn} & Toronto, Canada \\
+\end{tabular*}
+
+\section{Skills}
+\begin{itemize}[leftmargin=*,itemsep=-2pt]
+  \small{
+    \item \textbf{Security Engineering:} threat modeling, secure code review, vulnerability assessment, OAuth/OIDC, IAM, Zero Trust
+    \item \textbf{AI Agents:} Python, LLM orchestration, RAG, MCP, tool use, agent evaluation, guardrails, human approval workflows
+    \item \textbf{Software Engineering:} TypeScript, Go, SQL, React, Node.js, REST APIs, distributed systems, session management
+    \item \textbf{Cloud \& Infrastructure:} AWS, GCP, OpenShift, Kubernetes, Docker, Terraform, CI/CD, air-gapped deployment
+    \item \textbf{Data \& Operations:} Kafka, Elasticsearch, Redis, OpenTelemetry, audit trails, SLOs, alerting, incident response
+  }
+\end{itemize}
+
+\section{Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Royal Bank of Canada (RBC)}{Toronto, Canada}
+    {Staff Software Developer \& Enterprise Architect}{Nov 2022 -- Present}
+  \resumeItemListStart
+    \resumeItem{Secure Agentic Systems}
+      {Building ASB Assist, a Python-orchestrated LLM + RAG system that converts natural-language requirements into compliant architecture diagrams; implementing scoped tool access, security-pattern injection, grounding checks, evaluations, guardrails, and audit trails.}
+    \resumeItem{Agent Security Controls}
+      {Operationalized enterprise AI governance spanning IAM, model risk, Responsible AI, data residency, regulatory controls, and auditable deployment across AWS, GCP, and air-gapped OpenShift environments.}
+    \resumeItem{Production Platform Engineering}
+      {Designed and shipped a patent-pending TypeScript/React platform that maps 1,000+ architecture patterns to real-time service selections and automated certification; authored 99.6\% of production code and all core recommendation logic.}
+    \resumeItem{High-Trust Infrastructure}
+      {Architected an OpenTelemetry platform using Vector, Fluent Bit, Kafka, and Logstash that ingests 150\,TB/day across 10,000+ systems, with resilient pipelines, schema contracts, access controls, and vendor-independent operations.}
+    \resumeItem{Hands-On Technical Leadership}
+      {Lead 5 engineers through system design, implementation, security review, testing, ADRs, and operational handoff while aligning product, security, risk, and infrastructure stakeholders.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {HealthCard (Acquired Startup)}{Remote}
+    {Blockchain Architect \& First Full Stack Engineer}{Aug 2021 -- Jul 2022}
+  \resumeItemListStart
+    \resumeItem{Secure Full-Stack Delivery}
+      {Built the product from scratch using React/TypeScript, Node.js, Hyperledger Fabric, and AWS EKS, with authentication boundaries, tamper-evident verification, HIPAA-aligned data handling, and complete audit logging.}
+    \resumeItem{Security Automation}
+      {Implemented fraud-resistant insurance validation and transformer-based document classification behind monitored APIs, reducing manual review while preserving traceability for sensitive workflows.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {Canada Revenue Agency (CRA)}{Ottawa, Canada (Remote)}
+    {Software Developer Co-op}{Apr 2022 -- Nov 2022}
+  \resumeItemListStart
+    \resumeItem{Secure Platform Modernization}
+      {Modernized a federal tax platform from Apache Struts to React/TypeScript and contributed to APIs serving millions of Canadians, with WCAG compliance and automated SonarQube quality gates.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\section{Projects}
+\resumeSubHeadingListStart
+  \resumeSubItem{Autonomous Security Agent Workbench}
+    {Built a Python prototype that orchestrates specialized agents for alert triage, repository-aware secure code review, threat modeling, and vulnerability assessment; isolated tools behind typed policies, session-scoped credentials, human approval gates, and immutable audit logs.}
+  \resumeSubItem{Agent Security Evaluation Harness}
+    {Created adversarial task suites for prompt injection, tool misuse, privilege escalation, sensitive-data leakage, and unsafe actions; tracked attack success, authorization violations, groundedness, latency, and regression risk with end-to-end traces.}
+\resumeSubHeadingListEnd
+
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Dalhousie University}{Halifax, Canada}
+    {MASc Applied Computer Science, GPA: 3.9/4.0 $|$ TA: Algorithms, Advanced Cloud Computing}{Jan 2021 -- Aug 2022}
+  \resumeSubheading
+    {University of Toronto}{Toronto, Canada}
+    {Enterprise Architecture Certification (3-semester program)}{Completed 2024}
+  \resumeSubheading
+    {Gujarat Technological University}{Ahmedabad, India}
+    {B.E. Computer Engineering, GPA: 3.92/4.0}{Aug 2016 -- Aug 2020}
+\resumeSubHeadingListEnd
+
+\end{document}

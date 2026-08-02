@@ -1,0 +1,129 @@
+%-------------------------
+% Tailored Resume — Staff Software Engineer, Web3 (Robinhood)
+% Author : Dhruv Doshi
+%-------------------------
+\documentclass[letterpaper,9.5pt]{article}
+
+\usepackage{latexsym}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[pdftex,hidelinks]{hyperref}
+\usepackage[top=0.25in, bottom=0.25in, left=0.5in, right=0.5in]{geometry}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{\vspace{-7pt}\scshape\raggedright\large}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+\newcommand{\resumeItem}[2]{\item\small{\textbf{#1}{: #2 \vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{\vspace{-2pt}\item\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}\textbf{#1} & #2 \\\textit{\small#3} & \textit{\small #4} \\\end{tabular*}\vspace{-6pt}}
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\renewcommand{\labelitemii}{$\circ$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-6pt}}
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Dhruv Doshi} & \href{mailto:work@doshidhruv.com}{work@doshidhruv.com}\\
+  \href{https://www.doshidhruv.com}{doshidhruv.com} & +1-902-989-1274 $|$ Toronto, Canada\\
+\end{tabular*}
+
+%-----------SKILLS-----------------
+\section{Skills}
+\begin{itemize}[leftmargin=*,itemsep=-2pt]
+  \small{
+    \item \textbf{Web3 \& Tokenization:} Ethereum, Solidity, Hyperledger Fabric, ERC-20, smart contracts, wallets, transaction signing, DeFi
+    \item \textbf{Blockchain Engineering:} Hardhat, Foundry, event indexing, gas optimization, zk-SNARKs, on-chain analytics, 5AMLD controls
+    \item \textbf{Backend \& Distributed Systems:} Go, Python, TypeScript, JavaScript, SQL $|$ microservices, REST APIs, Kafka, data modeling
+    \item \textbf{Cloud-Native Infrastructure:} AWS, EKS, Kubernetes, Docker, Terraform, CI/CD, event-driven architecture, SRE
+    \item \textbf{Reliability \& Security:} OpenTelemetry, ELK, distributed tracing, SLOs, audit trails, IAM, Zero Trust, privacy, threat modeling
+    \item \textbf{AI Developer Tooling:} LLMs, RAG, agentic workflows, tool integration, prompt/context engineering, code and design automation
+    \item \textbf{Staff Leadership:} technical vision, architecture reviews, cross-team initiatives, roadmap ownership, mentoring, executive alignment
+  }
+\end{itemize}
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Royal Bank of Canada (RBC)}{Toronto, Canada}
+    {Staff Software Developer \& Enterprise Architect}{Nov 2022 -- Present}
+  \resumeItemListStart
+    \resumeItem{Large-Scale Distributed Platform Architecture}
+      {Architected an OpenTelemetry data platform using Vector, Fluent Bit, Kafka, and Logstash that ingests 150\,TB/day across 10,000+ systems; replaced point-to-point integrations with resilient, vendor-agnostic pipelines and standardized operational controls.}
+    \resumeItem{0-to-1 Production Platform Ownership}
+      {Designed and led delivery of a patent-pending platform using Node.js, TypeScript, React, and REST APIs; wrote 99.6\% of production code and 100\% of core logic for real-time rendering, recommendation, and auto-certification workflows.}
+    \resumeItem{Correctness, Security \& Architecture Quality}
+      {Define HLDs, ADRs, data and API contracts, IAM and Zero-Trust patterns, resiliency controls, auditability, and architecture reviews for regulated financial systems spanning cloud, Kubernetes, and on-prem environments.}
+    \resumeItem{Technical Leadership Across Teams}
+      {Lead 5 engineers through high-impact multi-team initiatives, remaining hands-on in code and design reviews while driving roadmaps, production handoff, observability, mentoring, and alignment with product, risk, security, and platform leaders.}
+    \resumeItem{AI-Assisted Engineering Productivity}
+      {Building ASB Assist, an LLM + RAG interface for generating architecture artifacts and service recommendations from natural-language requirements, with tool integration, security-pattern injection, evaluations, and audit trails.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {HealthCard (Acquired Startup)}{Remote}
+    {Blockchain Architect \& First Full Stack Engineer}{Aug 2021 -- Jul 2022}
+  \resumeItemListStart
+    \resumeItem{Blockchain Product From Scratch}
+      {Built React/TypeScript applications, Node.js/Express services, Hyperledger Fabric verification, ERC-20 Solidity contracts, and AWS EKS infrastructure with audit logging; the team scaled to 20+ engineers before acquisition.}
+    \resumeItem{Token, Identity \& Transaction Workflows}
+      {Designed fraud-resistant insurance validation and trust-score logic, permissioned-ledger data models, token contracts, and gas-optimized deployment pipelines using Hardhat/Foundry; reduced releases from days to under 30 minutes.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {CryptoVantage}{Netherlands (Remote)}
+    {Blockchain Developer}{Jul 2020 -- Dec 2020}
+  \resumeItemListStart
+    \resumeItem{On-Chain Risk \& Event Processing}
+      {Built a real-time Ethereum analytics system in Go and JavaScript with event streaming, wallet clustering, transaction risk scoring, and APIs for 5AMLD-aligned compliance workflows.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {Freelance Blockchain Development}{Remote}
+    {Independent Contractor}{Jan 2019 -- Jun 2020}
+  \resumeItemListStart
+    \resumeItem{Smart Contracts \& DeFi Delivery}
+      {Scoped and delivered Ethereum smart contracts, DeFi integrations, and permissioned-ledger architectures for multiple clients, owning design, implementation, testing, stakeholder communication, and production handoff.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+\resumeSubHeadingListStart
+  \resumeSubItem{Tokenized Asset Lifecycle Prototype}
+    {Built a personal Go/Solidity system for compliant asset issuance, allowlisted transfers, mint/burn controls, wallet signing, corporate-action events, idempotent indexing, reconciliation, and auditable API access.}
+  \resumeSubItem{DCS-BBN: Blockchain-Based Cloud Storage}
+    {Designed a distributed storage network using Solidity, Hyperledger Fabric, and zk-SNARK proofs for privacy-preserving verification; published in Springer ICMR.}
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Dalhousie University}{Halifax, Canada}
+    {Master of Applied Computer Science, GPA: 3.9/4.0}{Jan 2021 -- Aug 2022}
+  \resumeSubheading
+    {University of Toronto}{Toronto, Canada}
+    {Enterprise Architecture Certification (3-semester program)}{Completed 2024}
+  \resumeSubheading
+    {Gujarat Technological University}{Ahmedabad, India}
+    {B.E. Computer Engineering, GPA: 3.92/4.0}{Aug 2016 -- Aug 2020}
+\resumeSubHeadingListEnd
+
+\end{document}

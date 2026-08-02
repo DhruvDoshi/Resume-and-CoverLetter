@@ -1,0 +1,117 @@
+\documentclass[letterpaper,9.5pt]{article}
+\usepackage{latexsym}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[pdftex,hidelinks]{hyperref}
+\usepackage[top=0.25in, bottom=0.25in, left=0.5in, right=0.5in]{geometry}
+\usepackage{fancyhdr}
+\pagestyle{fancy}\fancyhf{}\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\urlstyle{same}\raggedbottom\raggedright
+\setlength{\tabcolsep}{0in}
+\titleformat{\section}{\vspace{-7pt}\scshape\raggedright\large}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+\newcommand{\resumeItem}[2]{\item\small{\textbf{#1}{: #2 \vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{\vspace{-2pt}\item\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}\textbf{#1} & #2 \\\textit{\small#3} & \textit{\small #4} \\\end{tabular*}\vspace{-6pt}}
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\renewcommand{\labelitemii}{$\circ$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-6pt}}
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Dhruv Doshi} & \href{mailto:work@doshidhruv.com}{work@doshidhruv.com}\\
+  \href{https://www.doshidhruv.com}{doshidhruv.com} & +1-902-989-1274 $|$ Toronto, Canada\\
+\end{tabular*}
+
+%-----------SKILLS-----------------
+\section{Skills}
+\begin{itemize}[leftmargin=*,itemsep=-2pt]
+  \small{
+    \item \textbf{Backend \& APIs:} Java, Spring Boot, Node.js, TypeScript, Go, Python, REST APIs, microservices, asynchronous processing
+    \item \textbf{Identity \& Security:} OAuth 2.0, OpenID Connect (OIDC), IAM, SSO, fine-grained authorization, Zero Trust, TLS/HTTPS, audit logging
+    \item \textbf{Distributed Systems:} event-driven architecture, Kafka, Redis, caching, circuit breakers, retries, API gateways, fault tolerance
+    \item \textbf{Cloud \& Delivery:} AWS, GCP, OCP/Kubernetes, EKS, GKE, Docker, Terraform, CI/CD, Linux/Unix
+    \item \textbf{Data \& Reliability:} PostgreSQL, MySQL, MongoDB, Elasticsearch, SQL, OpenTelemetry, ELK, SLOs, incident response
+    \item \textbf{Leadership:} architecture strategy, code/design reviews, mentoring, root-cause analysis, cross-functional delivery
+  }
+\end{itemize}
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Royal Bank of Canada (RBC)}{Toronto, Canada}
+    {Staff Software Developer \& Enterprise Architect}{Nov 2022 -- Present}
+  \resumeItemListStart
+    \resumeItem{Federated Backend Platform}
+      {Designed and led 0-to-1 production delivery of a patent-pending enterprise blueprint platform using Node.js, TypeScript, React, and REST APIs; its rules-based engine maps 1,000+ security, integration, and infrastructure patterns to compliant services.}
+    \resumeItem{Identity, Authorization \& Integration}
+      {Govern IAM, SSO, OAuth, API gateway, Zero-Trust, and internal/external HTTPS integration patterns for regulated enterprise solutions across AWS, GCP, OCP/Kubernetes, and on-prem environments.}
+    \resumeItem{High-Throughput Distributed Systems}
+      {Architected an OpenTelemetry platform using Vector, Fluent Bit, Kafka, and Logstash that ingests 150\,TB/day across 10,000+ systems with governed schemas, resilient routing, replayable pipelines, and vendor-agnostic integrations.}
+    \resumeItem{Resilience \& Operational Excellence}
+      {Define architecture patterns for caching, asynchronous processing, circuit breakers, retries, SLOs, alerting, and production readiness; lead incident triage and root-cause reviews for complex regulated platforms.}
+    \resumeItem{Technical Authority \& Mentorship}
+      {Lead 5 engineers through hands-on code and design reviews, ADRs, testing expectations, mentoring, sprint delivery, and cross-functional decisions with product, infrastructure, security, risk, and architecture teams.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {HealthCard (Acquired Startup)}{Remote}
+    {Blockchain Architect \& First Full Stack Engineer}{Aug 2021 -- Jul 2022}
+  \resumeItemListStart
+    \resumeItem{Secure Cloud-Native Services}
+      {Built the product from scratch: React/TypeScript frontend, Node.js/Express APIs, Hyperledger Fabric verification, and AWS EKS deployment with HIPAA-aligned controls, audit logging, and real-time insurance validation.}
+    \resumeItem{Architecture \& Delivery Ownership}
+      {Containerized services and implemented CI/CD automation that reduced deployments from days to under 30 minutes while improving reliability, security, and maintainability as the team scaled to 20+ engineers.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {Canada Revenue Agency (CRA)}{Ottawa, Canada (Remote)}
+    {IT Developer / Software Developer Co-op}{Apr 2022 -- Nov 2022}
+  \resumeItemListStart
+    \resumeItem{Enterprise Application Modernization}
+      {Modernized a Java/Apache Struts federal tax platform to React/TypeScript and contributed to secure backend APIs serving millions of Canadians with WCAG accessibility and automated quality gates.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {CryptoVantage}{Netherlands (Remote)}
+    {Blockchain Developer}{Jul 2020 -- Dec 2020}
+  \resumeItemListStart
+    \resumeItem{Real-Time Transaction Services}
+      {Built an event-driven analytics service in Go and JavaScript with Ethereum streaming, wallet clustering, and risk-scoring APIs for 5AMLD-aligned compliance workflows.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+\resumeSubHeadingListStart
+  \resumeSubItem{Federated Identity Gateway}
+    {Built a Java/Spring Boot prototype exposing REST APIs for OAuth 2.0/OIDC login, token validation, centralized entitlements, policy-based authorization, Redis caching, and auditable service-to-service access.}
+  \resumeSubItem{Resilient Content Router}
+    {Designed a Kubernetes-based Java service for routing HTTPS requests across content providers with asynchronous processing, circuit breakers, health checks, and OpenTelemetry instrumentation.}
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {University of Toronto}{Toronto, Canada}
+    {Enterprise Architecture Certification (3-semester program)}{Completed 2024}
+  \resumeSubheading
+    {Dalhousie University}{Halifax, Canada}
+    {Master of Applied Computer Science, GPA: 3.9/4.0}{Jan 2021 -- Aug 2022}
+  \resumeSubheading
+    {Gujarat Technological University}{Ahmedabad, India}
+    {B.E. Computer Engineering, GPA: 3.92/4.0}{Aug 2016 -- Aug 2020}
+\resumeSubHeadingListEnd
+
+\end{document}
