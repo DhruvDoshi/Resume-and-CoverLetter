@@ -1,0 +1,97 @@
+Dhruv Doshi
+doshidhruv.com
+
+work@doshidhruv.com
++1-902-989-1274 | Toronto, Canada
+
+Skills
+• Containers & Platform: Docker, Kubernetes, AWS EKS, OpenShift (OCP4.x), Helm, Terraform, CI/CD, DevOps,
+Infrastructure as Code
+• Security & Architecture: IAM, Zero-Trust, AI Governance, Responsible AI, audit trails, regulatory compliance, architecture
+patterns, Enterprise Architecture (TOGAF)
+• AI & Agentic Systems: LLMs, RAG, Agentic Workflows, MCP Gateway, LLM Orchestration, Bedrock, LangChain, Vector
+Databases
+• Languages & Development: TypeScript, JavaScript, Python, Go, SQL | React, Node.js, REST APIs, GraphQL
+• Data & Observability: OpenTelemetry, Kafka, ELK Stack, Prometheus, Distributed Tracing, SLOs, Alerting Pipelines
+
+Experience
+•
+
+•
+
+•
+
+Royal Bank of Canada (RBC)
+
+Toronto, Canada
+
+Staff Software Developer & Enterprise Architect
+Nov 2022 – Present
+◦ Architecture Enablement Platform: Designed and led 0-to-1 production delivery of a Node.js, TypeScript, and React
+platform that maps 1,000+ architecture patterns to compliant component selections and automates certification in
+security-constrained environments.
+◦ Reusable Technical Guidance: Defined OpenTelemetry schemas, collection patterns, and SDK onboarding guides adopted
+by 20+ engineering teams, turning complex observability requirements into repeatable implementation paths.
+◦ Platform & Governance Advisory: Worked with principal architects, product, engineering, and risk teams to guide
+solution certification across cloud, networking, gateway, IAM, security, and deployment patterns.
+◦ AI Agent Architecture: Building ASB Assist, an LLM and RAG interface for architecture generation that injects
+Zero-Trust, MCP gateway, agent gateway, and OAuth patterns into proposed designs; the capability remains under
+development.
+◦ Hands-On Technical Leadership: Led 5 engineers through weekly sprints, code reviews, ADRs, and platform mentorship
+while aligning delivery with product, risk, and architecture stakeholders.
+
+HealthCard (Acquired Startup)
+
+Remote
+
+Blockchain Architect & First Full Stack Engineer
+Aug 2021 – Jul 2022
+◦ Containerized Product Delivery: Built the product from scratch across React/TypeScript, Node.js/Express, Hyperledger
+Fabric, and AWS EKS, with HIPAA-compliant data handling and complete audit logging.
+◦ Secure Delivery Pipeline: Containerized workloads on EKS and implemented Hardhat/Foundry CI/CD for Ethereum
+contracts, reducing deployment cycles from days to under 30 minutes.
+
+Dalhousie University
+
+Halifax, Canada
+
+Teaching Assistant & Research Assistant
+Jan 2021 – Aug 2022
+◦ Technical Instruction: Supported Software Development, Algorithms, and graduate Advanced Cloud Computing through
+labs, assignment guidance, and clear explanations of systems concepts.
+
+Projects
+• Logging as a Service: Architected a vendor-neutral Vector, Fluent Bit, Kafka, and Logstash platform processing 150 TB/day
+across 10,000+ systems and enabling vendor changes through configuration rather than point-to-point rebuilds.
+• DCS-BBN: Designed a decentralized storage network using Solidity, Hyperledger Fabric, and zk-SNARK proofs for
+privacy-preserving verification; published through Springer ICMR.
+
+Education
+•
+
+University of Toronto
+Enterprise Architecture Certification (3-semester program)
+
+Completed 2024
+
+•
+
+Dalhousie University
+
+Halifax, Canada
+
+•
+
+Gujarat Technological University
+
+Master of Applied Computer Science; GPA: 3.9/4.0
+BE Computer Engineering; GPA: 3.92/4.0
+
+Toronto, Canada
+
+Jan 2021 – Aug 2022
+
+India
+Aug 2016 – Aug 2020
+
+

@@ -1,0 +1,42 @@
+Dhruv Doshi
+doshidhruv.com
+
+Email: work@doshidhruv.com
+Mobile: +1-902-989-1274
+
+August 28, 2026
+
+RE: Customer Experience Engineer, CXE-T – Docker
+Dear Hiring Manager,
+I am applying for Docker’s Customer Experience Engineer, CXE-T role. My background combines hands-on
+platform engineering, applied architecture guidance, cloud-native delivery, and technical enablement in complex
+enterprise environments. The opportunity to turn deep technical expertise into reusable sessions, reference
+patterns, and adoption frameworks is closely aligned with how I work: solve a difficult platform problem once,
+codify the solution, and help engineering teams apply it consistently.
+At RBC, I designed and led the 0-to-1 production delivery of an architecture enablement platform that maps
+more than 1,000 security, integration, infrastructure, and deployment patterns to compliant component
+selections. The platform gives engineers practical guidance while automating certification workflows in a highly
+constrained environment. I also work directly with principal architects, product, engineering, and risk
+stakeholders to translate requirements into designs that teams can implement. That combination of building and
+advising is well suited to Docker’s need for a technical authority who can scale adoption without losing
+architectural depth.
+My strongest example of reusable enablement is RBC’s OpenTelemetry standardization. I defined schema
+contracts, collection patterns, and SDK onboarding guides adopted by more than 20 engineering teams. In
+parallel, I architected a vendor-neutral logging platform processing 150 TB per day across 10,000+ systems.
+These initiatives required me to make complex platform behavior understandable, create repeatable
+implementation paths, and surface recurring engineering friction. As a former teaching assistant for Software
+Development, Algorithms, and graduate Advanced Cloud Computing, I also bring formal experience explaining
+technical concepts to audiences with different levels of maturity.
+I have built and operated containerized systems directly. As HealthCard’s first engineer, I delivered a React and
+Node.js product on AWS EKS with audit logging and regulated data-handling controls, then implemented
+CI/CD for its smart-contract components. At RBC, I am also building an LLM and RAG architecture assistant
+that incorporates Zero-Trust, OAuth, MCP gateway, and agent gateway patterns; I would bring an honest,
+implementation-oriented perspective to Docker’s emerging agent governance work.
+I would welcome the opportunity to help Docker customers move from initial adoption to secure, repeatable
+platform practices through technical sessions, reusable environments, and clear architectural guidance. Thank
+you for your consideration. I look forward to discussing how my platform engineering, enablement, and
+governance experience can support Docker’s customer community.
+Best regards,
+Dhruv Doshi
+
+

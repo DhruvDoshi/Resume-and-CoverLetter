@@ -1,0 +1,93 @@
+\documentclass[letterpaper,9.5pt]{article}
+\usepackage{latexsym}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage[top=0.25in, bottom=0.25in, left=0.5in, right=0.5in]{geometry}
+\usepackage{fancyhdr}
+\pagestyle{fancy}\fancyhf{}\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\urlstyle{same}\raggedbottom\raggedright
+\setlength{\tabcolsep}{0in}
+\titleformat{\section}{\vspace{-7pt}\scshape\raggedright\large}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+\newcommand{\resumeItem}[2]{\item\small{\textbf{#1}{: #2 \vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{\vspace{-2pt}\item\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}\textbf{#1} & #2 \\\textit{\small#3} & \textit{\small #4} \\\end{tabular*}\vspace{-6pt}}
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\renewcommand{\labelitemii}{$\circ$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-6pt}}
+
+\begin{document}
+
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Dhruv Doshi} & \href{mailto:work@doshidhruv.com}{work@doshidhruv.com}\\
+  \href{https://www.doshidhruv.com}{doshidhruv.com} & +1-902-989-1274 $|$ Toronto, Canada\\
+\end{tabular*}
+
+\section{Skills}
+\begin{itemize}[leftmargin=*,itemsep=-2pt]
+  \small{
+    \item \textbf{Containers \& Platform:} Docker, Kubernetes, AWS EKS, OpenShift (OCP4.x), Helm, Terraform, CI/CD, DevOps, Infrastructure as Code
+    \item \textbf{Security \& Architecture:} IAM, Zero-Trust, AI Governance, Responsible AI, audit trails, regulatory compliance, architecture patterns, Enterprise Architecture (TOGAF)
+    \item \textbf{AI \& Agentic Systems:} LLMs, RAG, Agentic Workflows, MCP Gateway, LLM Orchestration, Bedrock, LangChain, Vector Databases
+    \item \textbf{Languages \& Development:} TypeScript, JavaScript, Python, Go, SQL $|$ React, Node.js, REST APIs, GraphQL
+    \item \textbf{Data \& Observability:} OpenTelemetry, Kafka, ELK Stack, Prometheus, Distributed Tracing, SLOs, Alerting Pipelines
+  }
+\end{itemize}
+
+\section{Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Royal Bank of Canada (RBC)}{Toronto, Canada}
+    {Staff Software Developer \& Enterprise Architect}{Nov 2022 -- Present}
+  \resumeItemListStart
+    \resumeItem{Architecture Enablement Platform}{Designed and led 0-to-1 production delivery of a Node.js, TypeScript, and React platform that maps 1,000+ architecture patterns to compliant component selections and automates certification in security-constrained environments.}
+    \resumeItem{Reusable Technical Guidance}{Defined OpenTelemetry schemas, collection patterns, and SDK onboarding guides adopted by 20+ engineering teams, turning complex observability requirements into repeatable implementation paths.}
+    \resumeItem{Platform \& Governance Advisory}{Worked with principal architects, product, engineering, and risk teams to guide solution certification across cloud, networking, gateway, IAM, security, and deployment patterns.}
+    \resumeItem{AI Agent Architecture}{Building ASB Assist, an LLM and RAG interface for architecture generation that injects Zero-Trust, MCP gateway, agent gateway, and OAuth patterns into proposed designs; the capability remains under development.}
+    \resumeItem{Hands-On Technical Leadership}{Led 5 engineers through weekly sprints, code reviews, ADRs, and platform mentorship while aligning delivery with product, risk, and architecture stakeholders.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {HealthCard (Acquired Startup)}{Remote}
+    {Blockchain Architect \& First Full Stack Engineer}{Aug 2021 -- Jul 2022}
+  \resumeItemListStart
+    \resumeItem{Containerized Product Delivery}{Built the product from scratch across React/TypeScript, Node.js/Express, Hyperledger Fabric, and AWS EKS, with HIPAA-compliant data handling and complete audit logging.}
+    \resumeItem{Secure Delivery Pipeline}{Containerized workloads on EKS and implemented Hardhat/Foundry CI/CD for Ethereum contracts, reducing deployment cycles from days to under 30 minutes.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {Dalhousie University}{Halifax, Canada}
+    {Teaching Assistant \& Research Assistant}{Jan 2021 -- Aug 2022}
+  \resumeItemListStart
+    \resumeItem{Technical Instruction}{Supported Software Development, Algorithms, and graduate Advanced Cloud Computing through labs, assignment guidance, and clear explanations of systems concepts.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\section{Projects}
+\resumeSubHeadingListStart
+  \resumeSubItem{Logging as a Service}{Architected a vendor-neutral Vector, Fluent Bit, Kafka, and Logstash platform processing 150 TB/day across 10,000+ systems and enabling vendor changes through configuration rather than point-to-point rebuilds.}
+  \resumeSubItem{DCS-BBN}{Designed a decentralized storage network using Solidity, Hyperledger Fabric, and zk-SNARK proofs for privacy-preserving verification; published through Springer ICMR.}
+\resumeSubHeadingListEnd
+
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {University of Toronto}{Toronto, Canada}
+    {Enterprise Architecture Certification (3-semester program)}{Completed 2024}
+  \resumeSubheading
+    {Dalhousie University}{Halifax, Canada}
+    {Master of Applied Computer Science; GPA: 3.9/4.0}{Jan 2021 -- Aug 2022}
+  \resumeSubheading
+    {Gujarat Technological University}{India}
+    {BE Computer Engineering; GPA: 3.92/4.0}{Aug 2016 -- Aug 2020}
+\resumeSubHeadingListEnd
+
+\end{document}

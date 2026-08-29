@@ -1,0 +1,58 @@
+Dhruv Doshi                                                                                               work@doshidhruv.com
+doshidhruv.com                                                                                +1-902-989-1274 | Toronto, Canada
+
+Skills
+• Agentic AI & LLMs: Python, LangChain, LLM orchestration, RAG, agentic workflows, embeddings, vector databases, prompt
+  engineering, OpenAI API
+• AI Quality & Governance: LLM evaluation, tracing, Responsible AI, model risk, guardrails, audit trails, IAM, Zero Trust
+• Software Engineering: TypeScript, JavaScript, Go, SQL, Node.js, React, REST APIs, GraphQL, testing, CI/CD, system design
+• Cloud & Containers: AWS, GCP, OpenShift, Kubernetes, Docker, Terraform, Infrastructure as Code
+• Data & Retrieval: PostgreSQL, pgvector, Elasticsearch, Redis, Kafka, Airflow, streaming pipelines, schema design
+• Reliability & Observability: OpenTelemetry, ELK, distributed tracing, SLOs, alerting, performance analysis, incident response
+
+Experience
+    Royal Bank of Canada (RBC)                                                                                   Toronto, Canada
+•
+    Staff Software Developer & Enterprise Architect                                                              Nov 2022 – Present
+       ◦ ASB Assist – Agentic GenAI Workflow (In Development): Building a natural-language architecture-generation layer
+          using LLM and RAG orchestration to produce compliant diagrams and enterprise service recommendations, with retrieval,
+          prompt/context engineering, security controls, evaluations, and audit trails.
+       ◦ Hands-On Production Platform Engineering: Designed and shipped a patent-pending Node.js, TypeScript, and React
+          platform with rules-based recommendations, real-time rendering, and auto-certification; wrote 99.6% of production code and
+          all core logic spanning 1,000+ architecture patterns.
+       ◦ Enterprise Reliability & Observability: Architected an OpenTelemetry platform using Vector, Fluent Bit, Kafka, and
+          Logstash that ingests 150 TB/day across 10,000+ systems; defined vendor-neutral schemas and onboarding adopted by 20+
+          engineering teams.
+       ◦ AI Standards, Architecture & Mentoring: Operationalized an enterprise Responsible AI framework across AWS, GCP,
+          and OpenShift; lead five engineers through hands-on design, implementation, code reviews, ADRs, mentoring, and alignment
+          with product, risk, security, and architecture stakeholders.
+    HealthCard (Acquired Startup)                                                                                         Remote
+•
+    Blockchain Architect & First Full Stack Engineer                                                          Aug 2021 – Jul 2022
+       ◦ Applied AI in High-Stakes Workflows: Integrated transformer-based document classification into insurance and
+         credential-verification workflows, reducing manual review by 60% while supporting monitored inference, trust scoring, and
+         HIPAA-aligned audit trails.
+       ◦ Cloud-Native Product Delivery: Built the product from scratch across React/TypeScript, Node.js/Express APIs,
+         Hyperledger Fabric, and AWS EKS; the engineering team grew to 20+ before acquisition.
+    Canada Revenue Agency (CRA)                                                                       Ottawa, Canada (Remote)
+•
+    IT Developer / Software Developer Co-op                                                             Apr 2022 – Nov 2022
+       ◦ Public-Scale Engineering: Modernized a federal tax platform from Apache Struts to React/TypeScript and contributed to
+         APIs serving millions of Canadians, with accessibility, security, and automated quality gates.
+    CryptoVantage                                                                                          Netherlands (Remote)
+•
+    Blockchain Developer                                                                                Jul 2020 – Dec 2020
+       ◦ Real-Time Risk System: Built a Go/JavaScript on-chain analytics system integrating Ethereum event streams, wallet
+         clustering, and risk scoring for compliance-oriented transaction monitoring.
+
+Education
+    Dalhousie University                                                                                         Halifax, Canada
+•
+    Master of Applied Computer Science, GPA: 3.9/4.0                                                         Jan 2021 – Aug 2022
+    University of Toronto                                                                                        Toronto, Canada
+•
+    Enterprise Architecture Certification (3-semester program)                                                     Completed 2024
+    Gujarat Technological University                                                                           Ahmedabad, India
+•
+    B.E. Computer Engineering, GPA: 3.92/4.0                                                                 Aug 2016 – Aug 2020
+

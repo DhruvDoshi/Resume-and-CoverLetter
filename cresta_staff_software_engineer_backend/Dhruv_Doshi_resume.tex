@@ -1,0 +1,126 @@
+%-------------------------
+% Tailored Resume -- Staff Software Engineer, Backend (Cresta)
+% Author: Dhruv Doshi
+%-------------------------
+\documentclass[letterpaper,9.5pt]{article}
+
+\usepackage{latexsym}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[pdftex,hidelinks]{hyperref}
+\usepackage[top=0.25in, bottom=0.25in, left=0.5in, right=0.5in]{geometry}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{\vspace{-7pt}\scshape\raggedright\large}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+\newcommand{\resumeItem}[2]{\item\small{\textbf{#1}{: #2 \vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{\vspace{-2pt}\item\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}\textbf{#1} & #2 \\\textit{\small#3} & \textit{\small #4} \\\end{tabular*}\vspace{-6pt}}
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\renewcommand{\labelitemii}{$\circ$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-6pt}}
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Dhruv Doshi} & \href{mailto:work@doshidhruv.com}{work@doshidhruv.com}\\
+  \href{https://www.doshidhruv.com}{doshidhruv.com} & +1-902-989-1274 $|$ Toronto, Canada\\
+\end{tabular*}
+
+%-----------SKILLS-----------------
+\section{Skills}
+\begin{itemize}[leftmargin=*,itemsep=-2pt]
+  \small{
+    \item \textbf{Backend \& APIs:} TypeScript, JavaScript, Python, Go, SQL, Node.js, REST APIs, GraphQL, service-oriented architecture
+    \item \textbf{Distributed Data Systems:} Kafka, Airflow, Elasticsearch, Redis, ELK Stack, event streaming, schema design
+    \item \textbf{Cloud \& Infrastructure:} AWS (EKS, Lambda, API Gateway, RDS, S3, Kinesis), GCP, Kubernetes, Docker, Terraform, Helm, CI/CD
+    \item \textbf{Reliability \& Observability:} OpenTelemetry, distributed tracing, SLOs, Prometheus, alerting pipelines, production ownership
+    \item \textbf{AI Systems:} LLMs, RAG, LLM orchestration, embeddings, prompt engineering, OpenAI API, Bedrock, AI governance
+    \item \textbf{Technical Leadership:} distributed systems architecture, API design, ADRs, code reviews, mentorship, cross-team roadmaps
+  }
+\end{itemize}
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Royal Bank of Canada (RBC)}{Toronto, Canada}
+    {Staff Software Developer \& Enterprise Architect}{Nov 2022 -- Present}
+  \resumeItemListStart
+    \resumeItem{Large-Scale Distributed Data Platform}
+      {Architected an institution-wide platform using Vector, Fluent Bit, Kafka, and Logstash that ingests 150\,TB/day across 10,000+ systems; designed vendor-agnostic data paths that replaced point-to-point integrations.}
+    \resumeItem{0-to-1 Backend Platform Ownership}
+      {Designed and led production delivery of a patent-pending Node.js/TypeScript platform; wrote 99.6\% of production code and all core logic for real-time rendering, service matching, and rules-based auto-certification.}
+    \resumeItem{Reliability \& Developer Enablement}
+      {Defined OpenTelemetry schemas, collection pipelines, and SDK onboarding guides adopted by 20+ engineering teams, improving production observability while enabling vendor changes through configuration.}
+    \resumeItem{AI Runtime Collaboration}
+      {Building ASB Assist, an LLM + RAG interface that translates natural-language requirements into compliant architecture diagrams and service recommendations with security patterns and auditability.}
+    \resumeItem{Architecture \& Mentorship}
+      {Lead 5 engineers through design, code reviews, ADRs, sprint delivery, and production handoff; align product, risk, security, and architecture stakeholders on cross-team technical decisions.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {HealthCard (Acquired Startup)}{Remote}
+    {Blockchain Architect \& First Full Stack Engineer}{Aug 2021 -- Jul 2022}
+  \resumeItemListStart
+    \resumeItem{Cloud-Native Backend Delivery}
+      {Built the product from scratch across Node.js/Express REST APIs, React/TypeScript, Hyperledger Fabric, and AWS EKS with HIPAA-compliant data handling and audit logging; team scaled to 20+ engineers before acquisition.}
+    \resumeItem{Containerization \& Release Engineering}
+      {Containerized workloads on Kubernetes and built a Hardhat/Foundry CI/CD pipeline, reducing deployment cycles from days to under 30 minutes.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {Canada Revenue Agency (CRA)}{Ottawa, Canada (Remote)}
+    {IT Developer / Software Developer Co-op}{Apr 2022 -- Nov 2022}
+  \resumeItemListStart
+    \resumeItem{Production Platform Modernization}
+      {Migrated a federal tax platform from Apache Struts to React/TypeScript, contributed to APIs serving millions of Canadians, and established automated SonarQube quality gates.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {Dalhousie University}{Halifax, Canada}
+    {Research \& Teaching Assistant}{Jan 2021 -- Aug 2022}
+  \resumeItemListStart
+    \resumeItem{Systems Research \& Teaching}
+      {Developed call-stack decision algorithms for compiler/runtime research and supported Algorithms, Software Development, and graduate Advanced Cloud Computing courses.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+\resumeSubHeadingListStart
+  \resumeSubItem{DCS-BBN -- Decentralized Cloud Storage}
+    {Designed a peer-to-peer storage network spanning thousands of nodes with Solidity, Hyperledger Fabric, and zk-SNARK verification; published at the Springer ICMR International Conference on Mobile Computing.}
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Dalhousie University}{Halifax, Canada}
+    {Master of Applied Computer Science, GPA: 3.9/4.0}{Jan 2021 -- Aug 2022}
+  \resumeSubheading
+    {University of Toronto}{Toronto, Canada}
+    {Enterprise Architecture Certification (3-semester program)}{Completed 2024}
+  \resumeSubheading
+    {Gujarat Technological University}{India}
+    {B.E. Computer Engineering, GPA: 3.92/4.0}{Aug 2016 -- Aug 2020}
+\resumeSubHeadingListEnd
+
+\end{document}

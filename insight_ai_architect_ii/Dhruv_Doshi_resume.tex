@@ -1,0 +1,92 @@
+\documentclass[letterpaper,9.5pt]{article}
+\usepackage{latexsym}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage[top=0.25in, bottom=0.25in, left=0.5in, right=0.5in]{geometry}
+\usepackage{fancyhdr}
+\pagestyle{fancy}\fancyhf{}\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\urlstyle{same}\raggedbottom\raggedright
+\setlength{\tabcolsep}{0in}
+\titleformat{\section}{\vspace{-7pt}\scshape\raggedright\large}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+\newcommand{\resumeItem}[2]{\item\small{\textbf{#1}{: #2 \vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{\vspace{-2pt}\item\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}\textbf{#1} & #2 \\\textit{\small#3} & \textit{\small #4} \\\end{tabular*}\vspace{-6pt}}
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\renewcommand{\labelitemii}{$\circ$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-6pt}}
+
+\begin{document}
+
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Dhruv Doshi} & \href{mailto:work@doshidhruv.com}{work@doshidhruv.com}\\
+  \href{https://www.doshidhruv.com}{doshidhruv.com} & +1-902-989-1274 $|$ Toronto, Canada\\
+\end{tabular*}
+
+\section{Skills}
+\begin{itemize}[leftmargin=*,itemsep=-2pt]
+  \small{
+    \item \textbf{AI / GenAI:} LLMs, RAG, LangChain, Agentic Workflows, LLM Orchestration, Embeddings, Vector DBs (Pinecone, pgvector), Prompt Engineering, Model Evaluation, HuggingFace
+    \item \textbf{Cloud \& Infrastructure:} GCP Vertex AI, AWS (Bedrock, SageMaker, Lambda, EKS, S3), Kubernetes, Terraform, Docker, CI/CD, GKE
+    \item \textbf{Languages \& Applications:} Python, TypeScript, JavaScript, Go, SQL $|$ React, Node.js, REST APIs, GraphQL
+    \item \textbf{Architecture \& Governance:} Enterprise Architecture, Solution Design, Responsible AI, AI Governance, IAM, Zero-Trust, Sovereign AI, GDPR
+    \item \textbf{Data \& Observability:} Kafka, Airflow, Elasticsearch, Redis, OpenTelemetry, ELK Stack, Distributed Tracing, Prometheus, SLOs
+  }
+\end{itemize}
+
+\section{Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Royal Bank of Canada (RBC)}{Toronto, Canada}
+    {Staff Software Developer \& Enterprise Architect}{Nov 2022 -- Present}
+  \resumeItemListStart
+    \resumeItem{Conversational AI and RAG -- ASB Assist (Under Development)}{Building a natural-language architecture generation capability that converts business requirements into compliant diagrams, injects security patterns including OAuth, Zero-Trust, MCP and agent gateways, and recommends enterprise services through an LLM and retrieval-augmented generation pipeline.}
+    \resumeItem{Enterprise Solution Architecture Platform}{Designed and led 0-to-1 production delivery of a patent-pending Node.js/TypeScript and React platform; wrote 99.6\% of production code and 100\% of core logic, mapping 1,000+ architecture patterns to real-time component selections in air-gapped, security-constrained environments.}
+    \resumeItem{Responsible AI and Multi-Cloud Governance}{Defined and operationalised an enterprise AI governance framework spanning model risk, IAM, audit trails, OSFI, GDPR and Sovereign AI constraints across AWS, GCP and OCP; adopted organisation-wide.}
+    \resumeItem{Technical Leadership and Stakeholder Alignment}{Led 5 engineers through architecture, development, testing and delivery using code reviews, ADRs and weekly sprints; aligned product, risk and architecture stakeholders and produced reusable schema contracts and onboarding guidance.}
+    \resumeItem{Enterprise Observability Foundation}{Architected a Kafka and OpenTelemetry platform ingesting 150 TB/day across 10,000+ systems; standardised telemetry adopted by 20+ engineering teams, enabling AIOps and ML operations use cases without vendor-specific integrations.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {HealthCard (Acquired Startup)}{Remote}
+    {Blockchain Architect \& First Full Stack Engineer}{Aug 2021 -- Jul 2022}
+  \resumeItemListStart
+    \resumeItem{Applied AI and Cloud Delivery}{Integrated transformer-based document classification for medical-record parsing, including AWS EKS deployment, inference APIs and production monitoring; reduced manual review overhead by 60\%.}
+    \resumeItem{0-to-1 Product Engineering}{Built the React/TypeScript frontend, Node.js/Express API, blockchain verification layer and HIPAA-aligned AWS deployment; team scaled to 20+ engineers before acquisition.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {Canada Revenue Agency (CRA)}{Ottawa, Canada (Remote)}
+    {IT Developer / Software Developer Co-op}{Apr 2022 -- Nov 2022}
+  \resumeItemListStart
+    \resumeItem{Platform Modernisation}{Led migration of a federal tax-platform UI from Apache Struts to React/TypeScript and contributed to an API layer serving millions of Canadians while enforcing WCAG accessibility standards.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\section{Projects}
+\resumeSubHeadingListStart
+  \resumeSubItem{Flight Price Optimization Agent}{Built a reinforcement-learning agent using DQN/DDQN and Python for dynamic pricing; modelled demand curves and achieved an 18\% improvement over baseline pricing strategies in simulation.}
+\resumeSubHeadingListEnd
+
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Dalhousie University}{Halifax, Canada}
+    {MASc Computer Science, GPA: 3.9/4.0 $|$ TA: Algorithms, Advanced Cloud Computing}{Jan 2021 -- Aug 2022}
+  \resumeSubheading
+    {University of Toronto}{Toronto, Canada}
+    {Enterprise Architecture Certification (3-semester program)}{Completed 2024}
+  \resumeSubheading
+    {Gujarat Technological University}{India}
+    {BE Computer Engineering, GPA: 3.92/4.0}{Aug 2016 -- Aug 2020}
+\resumeSubHeadingListEnd
+
+\end{document}

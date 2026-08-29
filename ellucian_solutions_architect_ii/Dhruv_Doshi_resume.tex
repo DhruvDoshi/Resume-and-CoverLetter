@@ -1,0 +1,104 @@
+\documentclass[letterpaper,9.5pt]{article}
+\usepackage{latexsym}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage[top=0.25in, bottom=0.25in, left=0.5in, right=0.5in]{geometry}
+\usepackage{fancyhdr}
+\pagestyle{fancy}\fancyhf{}\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\urlstyle{same}\raggedbottom\raggedright
+\setlength{\tabcolsep}{0in}
+\titleformat{\section}{\vspace{-7pt}\scshape\raggedright\large}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+\newcommand{\resumeItem}[2]{\item\small{\textbf{#1}{: #2 \vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{\vspace{-2pt}\item\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}\textbf{#1} & #2 \\\textit{\small#3} & \textit{\small #4} \\\end{tabular*}\vspace{-6pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-6pt}}
+
+\begin{document}
+
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Dhruv Doshi} & \href{mailto:work@doshidhruv.com}{work@doshidhruv.com}\\
+  \href{https://www.doshidhruv.com}{doshidhruv.com} & +1-902-989-1274 $|$ Toronto, Canada\\
+\end{tabular*}
+
+\section{Skills}
+\begin{itemize}[leftmargin=*,itemsep=-2pt]
+  \small{
+    \item \textbf{Solution Architecture}: enterprise architecture, capability mapping, business-to-technology alignment, target-state design, solution assurance
+    \item \textbf{Delivery \& Governance}: implementation planning, architecture reviews, ADRs, risk controls, standards, roadmaps, audit trails
+    \item \textbf{Cloud \& Platforms}: AWS, GCP, Azure patterns, OpenShift/Kubernetes, Docker, Terraform, CI/CD, systems integration, REST APIs
+    \item \textbf{Data \& Integration}: Kafka, OpenTelemetry, ELK, Snowflake, Airflow, PostgreSQL, event-driven architecture, API gateways
+    \item \textbf{Engineering}: TypeScript, JavaScript, Python, Go, React, Node.js, GraphQL, infrastructure as code
+    \item \textbf{Leadership}: stakeholder workshops, process mapping, executive communication, cross-functional delivery, mentoring, technical documentation
+  }
+\end{itemize}
+
+\section{Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Royal Bank of Canada (RBC)}{Toronto, Canada}
+    {Staff Software Developer \& Enterprise Architect}{Nov 2022 -- Present}
+  \resumeItemListStart
+    \resumeItem{Solution Architecture \& Institutional Alignment}
+      {Translate business requirements into target-state architectures, standards, security controls, and solution certification practices for complex, regulated enterprise platforms.}
+    \resumeItem{Architecture Blueprint Platform}
+      {Designed and led 0-to-1 production delivery of a patent-pending platform that maps 1,000+ architecture patterns to component selections, automates compliant solution blueprints, and supports organization-wide adoption.}
+    \resumeItem{Capability \& Reference Model Governance}
+      {Digitalised RBC's technical reference model covering 1,000+ technologies and 1,500+ capabilities with ownership metadata, enabling standardized governance, roadmap planning, and modernization decisions.}
+    \resumeItem{Cloud Modernization \& Integration}
+      {Architected reusable AWS, GCP, OpenShift, API gateway, IAM, and Zero Trust patterns; used Terraform to replace point-to-point integrations with governed, repeatable platform services.}
+    \resumeItem{Cross-Functional Delivery Leadership}
+      {Led 5 engineers through sprint delivery, architecture and code reviews, ADRs, mentoring, and alignment with product, risk, security, infrastructure, engineering, and architecture stakeholders.}
+    \resumeItem{Outcome-Oriented Platform Delivery}
+      {Architected an OpenTelemetry-based platform ingesting 150\,TB/day across 10,000+ systems and standardized onboarding guidance adopted by 20+ engineering teams.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {HealthCard (Acquired Startup)}{Remote}
+    {Blockchain Architect \& First Full Stack Engineer}{Aug 2021 -- Jul 2022}
+  \resumeItemListStart
+    \resumeItem{Cross-Functional Product Implementation}
+      {Built a cloud-based platform from concept through implementation using React, TypeScript, Node.js, AWS EKS, audit logging, and integration workflows; supported growth to 20+ engineers before acquisition.}
+    \resumeItem{Process \& Controls Design}
+      {Designed real-time insurance validation, credential verification, and fraud-resistant claims workflows with HIPAA-aligned data handling, reducing manual review overhead by 60\%.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {Canada Revenue Agency (CRA)}{Ottawa, Canada (Remote)}
+    {IT Developer / Software Developer Co-op}{Apr 2022 -- Nov 2022}
+  \resumeItemListStart
+    \resumeItem{Public-Sector Platform Modernization}
+      {Migrated a federal tax platform from Apache Struts to React/TypeScript and contributed to APIs serving millions of Canadians while supporting accessibility, procurement, and automated quality standards.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {Dalhousie University}{Halifax, Canada}
+    {Research \& Teaching Assistant}{Jan 2021 -- Aug 2022}
+  \resumeItemListStart
+    \resumeItem{Higher-Education Teaching \& Research}
+      {Supported Software Development, Algorithms, and graduate Advanced Cloud Computing courses and researched call-stack decision algorithms for compiler/runtime analysis.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {University of Toronto}{Toronto, Canada}
+    {Enterprise Architecture Certification (3-semester program)}{Completed 2024}
+  \resumeSubheading
+    {Dalhousie University}{Halifax, Canada}
+    {Master of Applied Computer Science, GPA: 3.9/4.0}{Jan 2021 -- Aug 2022}
+  \resumeSubheading
+    {Gujarat Technological University}{Ahmedabad, India}
+    {B.E. Computer Engineering, GPA: 3.92/4.0}{Aug 2016 -- Aug 2020}
+\resumeSubHeadingListEnd
+
+\end{document}

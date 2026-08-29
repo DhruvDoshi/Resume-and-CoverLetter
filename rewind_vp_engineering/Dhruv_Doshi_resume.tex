@@ -1,0 +1,119 @@
+%-------------------------
+% Tailored Resume -- VP, Engineering, Rewind
+% Author : Dhruv Doshi
+%-------------------------
+\documentclass[letterpaper,9.5pt]{article}
+
+\usepackage{latexsym}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[pdftex,hidelinks]{hyperref}
+\usepackage[top=0.25in, bottom=0.25in, left=0.5in, right=0.5in]{geometry}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{\vspace{-7pt}\scshape\raggedright\large}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\newcommand{\resumeItem}[2]{\item\small{\textbf{#1}{: #2 \vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{\vspace{-2pt}\item\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}\textbf{#1} & #2 \\\textit{\small#3} & \textit{\small #4} \\\end{tabular*}\vspace{-6pt}}
+\renewcommand{\labelitemii}{$\circ$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-6pt}}
+
+\begin{document}
+
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Dhruv Doshi} & \href{mailto:work@doshidhruv.com}{work@doshidhruv.com}\\
+  \href{https://www.doshidhruv.com}{doshidhruv.com} & +1-902-989-1274 $|$ Toronto, Ontario\\
+\end{tabular*}
+
+\section{Skills}
+\begin{itemize}[leftmargin=*,itemsep=-2pt]
+  \small{
+    \item \textbf{Technology Strategy \& Leadership:} enterprise architecture, target-state roadmaps, engineering delivery, team leadership, executive communication, stakeholder alignment
+    \item \textbf{Cloud \& Reliability:} AWS, GCP, OCP/Kubernetes, Kafka, Terraform, Docker, CI/CD, SRE, SLOs, distributed systems, cost optimization
+    \item \textbf{Security \& Governance:} Responsible AI, IAM, OAuth, Zero Trust, OSFI, GDPR, HIPAA, audit trails, data governance, architecture reviews
+    \item \textbf{AI-Enabled Engineering:} LLMs, RAG, agentic workflows, prompt engineering, OpenAI API, Bedrock, LangChain, vector databases, MCP gateways
+    \item \textbf{Product Engineering:} TypeScript, JavaScript, Python, Go, SQL $|$ React, Node.js, REST APIs, GraphQL
+    \item \textbf{Data \& Observability:} OpenTelemetry, Kafka, ELK, Elasticsearch, distributed tracing, alerting pipelines, Prometheus
+  }
+\end{itemize}
+
+\section{Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Royal Bank of Canada (RBC)}{Toronto, Canada}
+    {Staff Software Developer \& Enterprise Architect}{Nov 2022 -- Present}
+  \resumeItemListStart
+    \resumeItem{Technology Vision \& Architecture Strategy}
+      {Shape secure target-state architectures and reusable patterns within RBC's Enterprise Architecture group, aligning engineering, product, risk, security, and infrastructure stakeholders through design reviews and solution certification.}
+    \resumeItem{0-to-1 SaaS-Style Platform Delivery}
+      {Designed and led production delivery of a patent-pending architecture blueprint platform using Node.js, TypeScript, and React; its rules-based recommendation and auto-certification workflows map 1,000+ patterns to compliant service selections.}
+    \resumeItem{Cloud Reliability \& Data Integrity}
+      {Architected an OpenTelemetry platform using Vector, Fluent Bit, Kafka, and Logstash that ingests 150\,TB/day across 10,000+ systems, replacing point-to-point vendor integrations with standardized, auditable routing.}
+    \resumeItem{Security, Compliance \& AI Governance}
+      {Defined an enterprise AI governance framework spanning Responsible AI, model risk, IAM, OSFI and GDPR considerations, audit trails, and sovereign-AI constraints across AWS, GCP, and OCP environments.}
+    \resumeItem{AI-Powered Product Development}
+      {Building ASB Assist, an LLM-and-RAG interface that translates natural-language requirements into compliant architecture diagrams and recommendations while applying security and governance patterns.}
+    \resumeItem{Engineering Leadership \& Operating Discipline}
+      {Lead 5 engineers through sprint planning, hands-on code and architecture reviews, ADRs, mentorship, and executive-ready demonstrations; drive direct cross-functional decisions with product, risk, security, and architecture partners.}
+    \resumeItem{Platform Economics \& Standardization}
+      {Created reusable Terraform modules and vendor-agnostic observability and API gateway patterns that reduced integration complexity, enabled tooling changes by configuration, and lowered operational cloud spend.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {HealthCard (Acquired Startup)}{Remote}
+    {Blockchain Architect \& First Full Stack Engineer}{Aug 2021 -- Jul 2022}
+  \resumeItemListStart
+    \resumeItem{Startup Product \& Cloud Ownership}
+      {Built a pre-insurance payment product from scratch across React/TypeScript, Node.js APIs, Hyperledger Fabric, and AWS EKS with HIPAA-aligned handling and audit logging; the engineering team grew to 20+ before acquisition.}
+    \resumeItem{Scale, Security \& Delivery}
+      {Designed real-time validation and fraud-resistant trust workflows, containerized services, and CI/CD automation that reduced deployment cycles from days to under 30 minutes.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {Canada Revenue Agency (CRA)}{Ottawa, Canada (Remote)}
+    {IT Developer / Software Developer Co-op}{Apr 2022 -- Nov 2022}
+  \resumeItemListStart
+    \resumeItem{Customer-Facing Platform Modernization}
+      {Migrated a federal tax platform UI from Apache Struts to React/TypeScript and contributed to APIs serving millions of Canadians while enforcing accessibility and automated quality gates.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {CryptoVantage}{Netherlands (Remote)}
+    {Blockchain Developer}{Jul 2020 -- Dec 2020}
+  \resumeItemListStart
+    \resumeItem{Security Analytics}
+      {Built a real-time on-chain monitoring system in Go and JavaScript with event streaming, wallet clustering, and risk scoring for 5AMLD-aligned compliance workflows.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {University of Toronto}{Toronto, Canada}
+    {Enterprise Architecture Certification (3-semester program)}{Completed 2024}
+  \resumeSubheading
+    {Dalhousie University}{Halifax, Canada}
+    {Master of Applied Computer Science, GPA: 3.9/4.0}{Jan 2021 -- Aug 2022}
+  \resumeSubheading
+    {Gujarat Technological University}{Ahmedabad, India}
+    {B.E. Computer Engineering, GPA: 3.92/4.0}{Aug 2016 -- Aug 2020}
+\resumeSubHeadingListEnd
+
+\end{document}
