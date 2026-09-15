@@ -1,0 +1,58 @@
+pages 1
+Dhruv Doshi work@doshidhruv.com
+doshidhruv.com +1-902-989-1274|Toronto, Canada
+Skills
+•Blockchain Architecture:Ethereum, Hyperledger Fabric, Solidity, ERC-20, permissioned ledgers, smart contracts, decentralized
+systems
+•Blockchain Engineering:Hardhat, Foundry, event streaming, gas optimization, wallet analytics, zk-SNARKs, 5AMLD-aligned
+controls
+•Architecture & Governance:enterprise and solution architecture, HLDs, ADRs, architecture reviews, standards, roadmaps,
+technical governance
+•Engineering:Go, TypeScript, JavaScript, Python, SQL|Node.js, React, REST APIs, microservices, event-driven architecture
+•Cloud & Delivery:AWS, EKS, Kubernetes, Docker, Terraform, CI/CD, Kafka, OpenTelemetry, IAM, Zero Trust, audit trails
+•T echnical Leadership:platform selection, design and code reviews, developer guidance, stakeholder alignment, production
+readiness
+Experience
+• Royal Bank of Canada (RBC)Toronto, Canada
+Staff Software Developer & Enterprise Architect Nov 2022 – Present
+◦Enterprise Architecture & T echnical Governance: Define target-state designs, standards, security controls, and
+solution-certification practices in a regulated financial institution; lead reviews with product, engineering, risk, security, and
+infrastructure stakeholders.
+◦0-to-1 Production Platform Ownership: Designed and led delivery of a patent-pending architecture blueprint platform
+using Node.js, TypeScript, React, and REST APIs; built rules-based recommendations and auto-certification across 1,000+
+architecture patterns.
+◦Architecture Leadership & Hands-On Delivery: Lead 5 engineers through HLDs, ADRs, design and code reviews,
+sprint planning, risk decisions, mentoring, production handoff, and executive-ready demonstrations while remaining hands-on
+in implementation.
+◦Enterprise Platform Architecture: Architected an OpenTelemetry platform using Vector, Fluent Bit, Kafka, and
+Logstash that ingests 150 TB/day across 10,000+ systems, replacing point-to-point integrations with resilient, auditable
+pipelines.
+• HealthCard (Acquired Startup) Remote
+Blockchain Architect & First Full Stack Engineer Aug 2021 – Jul 2022
+◦End-to-End Blockchain Product Delivery: Built a pre-insurance payment platform from scratch across
+React/TypeScript, Node.js/Express APIs, Hyperledger Fabric verification, ERC-20 Solidity contracts, and AWS EKS with
+HIPAA-aligned audit controls.
+◦Permissioned Ledger Solution Design: Designed and implemented insurance validation and trust-score logic on
+Hyperledger Fabric for real-time premium verification and fraud-resistant claims processing; established architecture and
+delivery practices as the team scaled to 20+ engineers.
+◦Ethereum Engineering & CI/CD: Implemented gas-optimized smart contracts and automated testing and deployment
+with Hardhat and Foundry, reducing release cycles from days to under 30 minutes.
+• CryptoV antage Netherlands (Remote)
+Blockchain Developer Jul 2020 – Dec 2020
+◦Ethereum T ransaction Monitoring: Built a real-time on-chain analytics system in Go and JavaScript with Ethereum
+event streaming, wallet clustering, risk scoring, and APIs for 5AMLD-aligned compliance workflows.
+• F reelance Blockchain DevelopmentRemote
+Independent Contractor Jan 2019 – Jun 2020
+◦Blockchain Architecture & Smart Contracts: Delivered Ethereum smart contracts, DeFi integrations, and
+permissioned-ledger solutions for multiple clients, owning requirements, architecture, implementation, testing, stakeholder
+communication, and production handoff.
+Projects
+•DCS-BBN: Blockchain-Based Cloud Storage: Designed a decentralized storage network using Solidity, Hyperledger Fabric,
+and zk-SNARK proofs for privacy-preserving verification; published in Springer ICMR.
+Education
+• University of T oronto Toronto, Canada
+Enterprise Architecture Certification (3-semester program) Completed 2024
+• Dalhousie University Halifax, Canada
+Master of Applied Computer Science, GPA: 3.9/4.0 Jan 2021 – Aug 2022
+• Gujarat T echnological UniversityAhmedabad, India
+B.E. Computer Engineering, GPA: 3.92/4.0 Aug 2016 – Aug 2020
